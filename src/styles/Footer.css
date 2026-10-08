@@ -1,0 +1,67 @@
+/* .
+
+PALETA:
+
+NEGRO: #040605
+GRIS OSCURO: #373C3D
+BLANCO: #FFFFFF
+ROJO-LIGHT: #E60410
+ROJO-DARK: #C41117
+
+. */
+
+.FooterMain-Mobile {
+
+ width: 100vw;
+ height: 22.5dvh;
+
+ background-color: #040605;
+ border-top: solid 3px #C41117;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+
+ background-size: cover;
+ background-repeat: no-repeat;
+
+}
+
+.FooterLogo {
+
+ width: 25%;
+ height: fit-content;
+ object-fit: contain;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.FooterText {
+
+ font-family: "Roboto Flex";
+ font-size: 4.5vw;
+ font-weight: 500;
+ color: rgb(255, 255, 255, 0.95); 
+ text-align: center;
+ position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 100%;
+
+}
+
+.TextTopBoder {
+
+ width: 75%;
+ position: absolute;
+ height: 2.5px;
+ border-radius: 10px;
+ background-color: #C41117;
+ /* top: 0; */
+ margin-bottom: 7dvh;
+
+}
