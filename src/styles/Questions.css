@@ -10,6 +10,7 @@ ROJO-DARK: #C41117
 
 . */
 
+@media (max-width: 499px) {
 
 .MainQuestions-Mobile {
 
@@ -245,3 +246,7 @@ height: calc(12.96dvh + 2.4px);
     height: calc(10.125dvh + 1.875px);
 
 }
+
+}
+
+

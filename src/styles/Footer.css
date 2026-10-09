@@ -10,7 +10,9 @@ ROJO-DARK: #C41117
 
 . */
 
-.FooterMain-Mobile {
+@media (max-width: 499px) {
+
+ .FooterMain-Mobile {
 
  width: 100vw;
  height: 22.5dvh;
@@ -61,7 +63,10 @@ ROJO-DARK: #C41117
  height: 2.5px;
  border-radius: 10px;
  background-color: #C41117;
- /* top: 0; */
  margin-bottom: 7dvh;
 
 }
+
+
+}
+
