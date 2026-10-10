@@ -24,7 +24,7 @@
 
  bottom: 0;
  object-fit: cover;
- object-position: 50% 60%;
+ object-position: 50% 55%;
  z-index: 1;
 
 }
@@ -47,7 +47,7 @@
 
  animation: slide-in-fwd-center 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 
- gap: 25px;
+ gap: 35px;
 
 }
 
@@ -97,8 +97,10 @@
 
  width: 40%;
  height: 4vw;
- background-color: rgb(230, 4, 16, 0.9);
+ background-color: transparent;
  border-radius: 200px;
+
+ border: solid 2px #E60410;
  
  display: flex;
  flex-direction: row;
@@ -110,35 +112,49 @@
  font-size: 2vw;
  font-family: "Roboto Flex", sans-serif;
 
- border: none;
  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
  cursor: pointer;
+
+ position: relative;
+ overflow: hidden;
+
+}
+
+.AnimBlock {
+
+ width: 120%;
+ height: 100%;
+ background-color: #E60410;
+
+ position: absolute;
+ transform: translateX(-100%);
+ z-index: -1;
+
+}
+
+@keyframes LandButtonHover {
+
+ to {
+    transform: translateX(0%);
+ }
 
 }
 
 .LandButton:hover {
 
- animation: HoverAnimnMainButton 0.25s ease forwards;
+ .AnimBlock {
 
+ width: 120%;
+ height: 100%;
+ background-color: #E60410;
+
+ position: absolute;
+ animation: LastButtonHover 0.5s  ease forwards
+  
 }
 
-  @keyframes HoverAnimnMainButton {
-
-    0% {
-      background-color: rgb(230, 4, 16, 0.9);
-      color: #ffffff;
-
-    }
-
-    100% {
-      background-color: rgb(255, 255, 255, 0.9);
-      color: #E60410;
-      transform: translateY(-10px);
-
-    }
-
-  }
+}
 
 .LandButtonLogo {
 

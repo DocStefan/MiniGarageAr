@@ -10,6 +10,260 @@ ROJO-DARK: #C41117
 
 . */
 
+@media (min-width: 1025px) {
+
+.MainQuestions-Mobile {
+  width: 100%;
+  height: 90dvh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 70%;
+}
+
+.MainQuestionsContainer {
+  width: 70%;
+  height: calc(90% + 15px);
+
+  box-sizing: border-box;
+  border: 2.5px solid #FFFFFF;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  background-color: rgb(4, 6, 5, 0.8);
+  overflow: hidden;
+}
+
+.TittleContainer {
+  width: 100%;
+  height: 20%;
+  flex-shrink: 0;
+
+  box-sizing: border-box;
+  border-bottom: 2.5px solid #FFFFFF;
+
+  color: #FFFFFF;
+  font-weight: 100;
+  font-size: 5vw;
+  font-family: "ANTON", sans-serif;
+
+  text-align: center;
+  line-height: 1.1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: default;
+
+}
+
+.QuestionsDataContainer {
+  width: 100%;
+  height: 80%;
+  flex: 1;
+  min-height: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  overflow: hidden;
+}
+
+.QuestionContainer {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+
+  box-sizing: border-box;
+  border-bottom: 2px solid #FFFFFF;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+  cursor: pointer;
+
+  transition: flex 0.35s ease;
+}
+
+
+.QuestionContainerActive {
+  flex: 2.5;
+  height: 50%;
+}
+
+
+.QuestionsDataContainer:has(.QuestionContainerActive)
+.QuestionContainer:not(.QuestionContainerActive) {
+  flex: 0.8;
+}
+
+.QuestionLogo {
+  width: 20%;
+  height: 65px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionLogoMark {
+  position: relative;
+
+  width: 70%;
+  max-width: 76px;
+  height: 113%;
+  aspect-ratio: 1 / 1;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    145deg,
+    #FF2A2A 0%,
+    #B21010 45%,
+    #5A0707 100%
+  );
+
+  box-shadow:
+    0 0 0 1px rgba(255, 60, 60, 0.25) inset,
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 0 14px rgba(237, 28, 36, 0.35);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionLogoMark::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0) 46%
+  );
+
+  pointer-events: none;
+}
+
+.QuestionLogoPic {
+  display: block;
+
+  width: 70%;
+  height: 70%;
+
+  object-fit: contain;
+}
+
+.QuestionTittle {
+  width: 65%;
+  height: 65px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionTittleSpan {
+  width: 95%;
+  height: auto;
+
+  margin: 0;
+
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: clamp(14px, 1.3vw, 22px);
+  font-family: "Roboto Flex", sans-serif;
+
+  line-height: 1.25;
+  text-align: left;
+
+  display: flex;
+  align-items: center;
+}
+
+.QuestionOpenSymbol {
+  width: 15%;
+  height: 65px;
+  flex-shrink: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.QuestionSymbolPic {
+  display: block;
+
+  width: 32px;
+  max-width: 55%;
+  height: auto;
+
+  object-fit: contain;
+}
+
+.QuestionAnswer {
+  width: 100%;
+  flex: 1 0 100%;
+  min-height: 0;
+  height: 50%;
+
+  box-sizing: border-box;
+  padding: 0px 5%;
+
+  background-color: rgb(196, 17, 23, 0.6);
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.QuestionContainerActive .QuestionAnswer {
+
+display: flex;
+
+}
+
+.QuestionAnswerText {
+  width: 100%;
+  height: auto;
+
+  margin: 0 !important;
+
+  color: #FFFFFF;
+  font-weight: 450;
+  font-size: clamp(13px, 1.1vw, 19px);
+  font-family: "Roboto Flex", sans-serif;
+
+  line-height: 1.4;
+  text-align: left;
+}
+
+}
+
 @media (max-width: 499px) {
 
 .MainQuestions-Mobile {

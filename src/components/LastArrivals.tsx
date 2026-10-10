@@ -20,7 +20,7 @@ function LastArrivals() {
 
         <div className="LastArrivals-Mobile">
 
-{ screen === "MOBILE" ? <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div> : <div className="ArrivalsTittle">ULTIMOS INGRESOS</div>}
+{ screen === "MOBILE" ? <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div> : <div className="ArrivalsTittle"><span className="FirstSpanTittle">ULTIMOS</span><span className="SecondSpanTittle">INGRESOS</span></div>}
             <div className="ArrivalShowcase">
 
                 <div className="ShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>
@@ -43,7 +43,7 @@ function LastArrivals() {
 
                       <span className="TextPRICE">$ 19.990,00</span>
 
-                      <button className="TextButtonAction">AGREGAR AL CARRITO</button>
+                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 
@@ -69,7 +69,7 @@ function LastArrivals() {
 
                       <span className="TextPRICE">$ 14.990,00</span>
 
-                      <button className="TextButtonAction">AGREGAR AL CARRITO</button>
+                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 
@@ -96,7 +96,7 @@ function LastArrivals() {
 
                       <span className="TextPRICE">$ 22.990,00</span>
 
-                      <button className="TextButtonAction">AGREGAR AL CARRITO</button>
+                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 
@@ -123,7 +123,7 @@ function LastArrivals() {
 
                       <span className="TextPRICE">$ 24.990,00</span>
 
-                      <button className="TextButtonAction">AGREGAR AL CARRITO</button>
+                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 

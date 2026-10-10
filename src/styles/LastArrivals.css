@@ -19,8 +19,8 @@
  height: 16.67%;
 
  display: flex;
- flex-direction: column;
- justify-content: start;
+ flex-direction: row;
+ justify-content: center;
  align-items: center;
 
   font-family: "Dela Gothic One", sans-serif;
@@ -33,6 +33,13 @@
   /* background-color: white; */
 
   border-bottom: 3px solid #E60410;
+  column-gap: 1.5%;
+
+}
+
+.SecondSpanTittle {
+
+ color:#E60410
 
 }
 
@@ -93,6 +100,7 @@
 
  box-shadow: rgb(230, 4, 16, 0.4) 0px 0px 0px 2px, rgb(230, 4, 16, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
  border: solid 2px rgb(230, 4, 16, 1);
+ transform: translateY(-10px);
 
 }
 
@@ -165,7 +173,7 @@
 
  font-family: "Roboto flex", system-ui;
  color: #f10f1a;
- font-size: 1.2vw;
+ font-size: 1.5vw;
  font-weight: 700;
 
  width: 95%;
@@ -253,7 +261,7 @@
 
  display: flex;
  justify-content: center;
- align-items: center;
+ align-items: start;
 
 
  color: #FFFFFF;
@@ -488,7 +496,7 @@ color: #FFFFFF;
 
  font-family: "Roboto flex", system-ui;
  color: #f10f1a;
- font-size: 3vw;
+ font-size: 4vw;
  font-weight: 700;
 
  width: 95%;
