@@ -6,6 +6,7 @@ import produEx from '../assets/produEx.webp'
 import produExB from '../assets/produExB.png'
 import produExC from '../assets/produExC.png'
 import produExD from '../assets/produExD.png'
+import useResponsiveDetect from "../customHooks/responsiveDetect"
 
 import { useNavigate } from "react-router"
 
@@ -13,12 +14,13 @@ function LastArrivals() {
 
     const navegar = useNavigate()
 
+    const screen = useResponsiveDetect()
+
     return (
 
         <div className="LastArrivals-Mobile">
 
-            <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div>
-
+{ screen === "MOBILE" ? <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div> : <div className="ArrivalsTittle">ULTIMOS INGRESOS</div>}
             <div className="ArrivalShowcase">
 
                 <div className="ShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>
@@ -131,7 +133,7 @@ function LastArrivals() {
 
             <div className="LastArrivalButton">
 
-               <button type="button" className="ButtonToCatalogueArrival" onClick={() => {navegar("/catalogo")}}><div className="ButtonArrivalsText">VER CATALOGO</div></button>
+               <button type="button" className="ButtonToCatalogueArrival" onClick={() => {navegar("/catalogo")}}><div className="ButtonArrivalsText">VER CATALOGO{screen === "PC" ? <div className="AnimBlock"></div> : ""}</div></button>
 
             </div>
 

@@ -7,8 +7,6 @@ import FooterBack from '../assets/FooterBack.webp'
 
 function Footer() {
 
-
-
   return (
 
     <div className="FooterMain-Mobile" style={{backgroundImage: `url("${FooterBack}")`}}>
