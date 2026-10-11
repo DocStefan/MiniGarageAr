@@ -4,7 +4,7 @@ import LandBack from '../assets/LandBack.webp'
 import { useNavigate } from "react-router"
 import fondoLandPc from '../assets/fondoLandPc.webp'
 import useResponsiveDetect from "../customHooks/responsiveDetect"
-
+import { useScroll } from "../customHooks/useScroll"
 
 
 
@@ -14,11 +14,17 @@ function LandPag() {
 
  const screen = useResponsiveDetect()
 
+ const scrollTo = useScroll()
+
   return (
 
-    <div className="MaindLand-Mobile">
+    <div className="MaindLand-Mobile" id="Land" onClick={() => { if(screen === "PC") {scrollTo("Land")}}}>
 
        <img className="BackPic-Mobile" src={screen === "PC" ? fondoLandPc : LandBack}></img>
+
+       <div className="PicDegradeLandTop"></div>
+
+       <div className="PicDegradeLandBottom"></div>
 
        <div className="LandTextContainer">
 

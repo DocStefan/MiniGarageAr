@@ -17,7 +17,8 @@ function NavBar() {
     logo: string,
     text: string,
     active?: boolean,
-    route?: string 
+    route?: string
+    link?: string 
 
   }
 
@@ -98,7 +99,7 @@ function NavBar() {
         </div>
 
         {OptionsManager.map((data: navOptions) => {
-          return <div className={data.active ? "MenuOption MenuOptionActive" : "MenuOption"} onClick={() => {if (data.route) {navigateTo(data.route)}}}>
+          return <div className={data.active ? "MenuOption MenuOptionActive" : "MenuOption"} onClick={() => {setNavActive(false); if (data.route) {navigateTo(data.route)} else {window.open("https://www.instagram.com/garageminiarg/?hl=es", "_blank", "noopener,noreferrer")}}}>
 
             <div className="MenuOptionLogo">
 

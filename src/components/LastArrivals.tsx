@@ -7,7 +7,7 @@ import produExB from '../assets/produExB.png'
 import produExC from '../assets/produExC.png'
 import produExD from '../assets/produExD.png'
 import useResponsiveDetect from "../customHooks/responsiveDetect"
-
+import { useScroll } from "../customHooks/useScroll"
 import { useNavigate } from "react-router"
 
 function LastArrivals() {
@@ -16,11 +16,15 @@ function LastArrivals() {
 
     const screen = useResponsiveDetect()
 
+    const scrollTo = useScroll()
+
+
     return (
 
-        <div className="LastArrivals-Mobile">
+        <div className="LastArrivals-Mobile" id="Arrivals" onClick={() => {scrollTo("Arrivals")}}>
 
-{ screen === "MOBILE" || screen === "TABLET" ? <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div> : <div className="ArrivalsTittle"><span className="FirstSpanTittle">ULTIMOS</span><span className="SecondSpanTittle">INGRESOS</span></div>}
+          <div className="ArrivalsTittle"><span className="FirstSpanTittle">ULTIMOS</span><span className="SecondSpanTittle">INGRESOS</span></div>
+
             <div className="ArrivalShowcase">
 
                 <div className="ShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>

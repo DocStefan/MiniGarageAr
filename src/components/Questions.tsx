@@ -10,12 +10,14 @@ import fondopreguntas from '../assets/fondopreguntas.webp'
 import plusquestion from '../assets/plusquestion.webp'
 import minusquestion from '../assets/minusquestion.webp'
 import useResponsiveDetect from "../customHooks/responsiveDetect"
-
 import { useState } from "react"
+import { useScroll } from "../customHooks/useScroll"
 
 function Questions() {
 
   const screen = useResponsiveDetect()
+
+  const scrollTo = useScroll()
 
   interface questionData {
 
@@ -73,7 +75,7 @@ function Questions() {
 
     return (
 
-      <div className="MainQuestions-Mobile" style={{ backgroundImage: `url("${fondopreguntas}")` }}>
+      <div className="MainQuestions-Mobile" id="Questions" onClick={() => {scrollTo("Questions")}} style={{ backgroundImage: `url("${fondopreguntas}")` }}>
 
         <div className="MainQuestionsContainer">
 
@@ -109,7 +111,7 @@ function Questions() {
 
     return (
 
-      <div className="MainQuestions-Mobile" style={{ backgroundImage: `url("${fondopreguntas}")` }}>
+      <div className="MainQuestions-Mobile" id="Questions" onClick={() => {scrollTo("Questions")}} style={{ backgroundImage: `url("${fondopreguntas}")` }}>
 
         <div className="MainQuestionsContainer">
 
