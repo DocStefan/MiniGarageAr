@@ -74,7 +74,7 @@ function NavBar() {
 
         <div className="Logo-Mobile">
 
-          <img className="PicLogo-Mobile" src={LogoMiniGarageAr} alt="MiniGarageAr"></img>
+          <img className="PicLogo-Mobile" loading='eager' decoding='async' fetchPriority="high" src={LogoMiniGarageAr} alt="MiniGarageAr"></img>
 
         </div>
 

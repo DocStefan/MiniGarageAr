@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../styles/LastArrivals.css"
-import banner from '../assets/banner.webp'
+// import banner from '../assets/banner.webp'
 import LastBack from '../assets/LastBack.webp'
 import produEx from '../assets/produEx.webp'
 import produExB from '../assets/produExB.png'
@@ -27,6 +27,57 @@ function LastArrivals() {
 
             <div className="ArrivalShowcase">
 
+              {/* <div className="LoadingShowcasePostBox">
+
+                <div className="LoadingPic"></div>
+
+                <div className="LoadingName"></div>
+
+                <div className="LoadingBrand"></div>
+
+                <div className="LoadingPrice"></div>
+
+              </div>
+
+              
+              <div className="LoadingShowcasePostBox">
+
+                <div className="LoadingPic"></div>
+
+                <div className="LoadingName"></div>
+
+                <div className="LoadingBrand"></div>
+
+                <div className="LoadingPrice"></div>
+
+              </div>
+
+              
+              <div className="LoadingShowcasePostBox">
+
+                <div className="LoadingPic"></div>
+
+                <div className="LoadingName"></div>
+
+                <div className="LoadingBrand"></div>
+
+                <div className="LoadingPrice"></div>
+
+              </div>
+
+              
+              <div className="LoadingShowcasePostBox">
+
+                <div className="LoadingPic"></div>
+
+                <div className="LoadingName"></div>
+
+                <div className="LoadingBrand"></div>
+
+                <div className="LoadingPrice"></div>
+
+              </div> */}
+
                 <div className="ShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>
 
                     <div className="FavIconCont"><span className="material-symbols-outlined FavIcon">favorite</span></div>
@@ -46,8 +97,6 @@ function LastArrivals() {
                       <span className="TextBRAND">HW Mainline 2023</span>
 
                       <span className="TextPRICE">$ 19.990,00</span>
-
-                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 
@@ -72,8 +121,6 @@ function LastArrivals() {
                       <span className="TextBRAND">HW Torque 2025</span>
 
                       <span className="TextPRICE">$ 14.990,00</span>
-
-                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 
@@ -100,8 +147,6 @@ function LastArrivals() {
 
                       <span className="TextPRICE">$ 22.990,00</span>
 
-                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
-
                     </div>
 
                 </div>
@@ -126,8 +171,6 @@ function LastArrivals() {
                       <span className="TextBRAND">HW Factory Fresh 2026</span>
 
                       <span className="TextPRICE">$ 24.990,00</span>
-
-                      {/* <button className="TextButtonAction">AGREGAR AL CARRITO</button> */}
 
                     </div>
 

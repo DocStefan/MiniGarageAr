@@ -20,7 +20,7 @@ function LandPag() {
 
     <div className="MaindLand-Mobile" id="Land" onClick={() => { if(screen === "PC") {scrollTo("Land")}}}>
 
-       <img className="BackPic-Mobile" src={screen === "PC" ? fondoLandPc : LandBack}></img>
+       <img className="BackPic-Mobile" loading='eager' decoding='async' fetchPriority="high" src={screen === "PC" ? fondoLandPc : LandBack}></img>
 
        <div className="PicDegradeLandTop"></div>
 
