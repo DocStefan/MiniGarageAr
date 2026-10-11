@@ -1,7 +1,6 @@
 // import React from 'react'
 import "../styles/LandPag.css"
 import LandBack from '../assets/LandBack.webp'
-import rightarrow from '../assets/rightarrow.webp'
 import { useNavigate } from "react-router"
 import fondoLandPc from '../assets/fondoLandPc.webp'
 import useResponsiveDetect from "../customHooks/responsiveDetect"
@@ -27,7 +26,7 @@ function LandPag() {
          
          <span className="SecondText">Tu proximo Hot Wheels te esta esperando</span>
 
-         <button className="LandButton" type="button" onClick={() => {navegar("/catalogo")}}>VER CATALOGO {screen === "PC" ? "" : <img className="LandButtonLogo"  src={rightarrow}></img>} {screen === "PC" ? <div className="AnimBlock"></div> : ""}</button>
+         <button className="LandButton" type="button" onClick={() => {navegar("/catalogo")}}>VER CATALOGO<div className="AnimBlock"></div></button>
 
        </div>
 

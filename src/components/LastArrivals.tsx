@@ -20,7 +20,7 @@ function LastArrivals() {
 
         <div className="LastArrivals-Mobile">
 
-{ screen === "MOBILE" ? <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div> : <div className="ArrivalsTittle"><span className="FirstSpanTittle">ULTIMOS</span><span className="SecondSpanTittle">INGRESOS</span></div>}
+{ screen === "MOBILE" || screen === "TABLET" ? <div className="ArrivalsBanner" style={{backgroundImage: `url("${banner}")`}}><div className="PicDegrade"></div></div> : <div className="ArrivalsTittle"><span className="FirstSpanTittle">ULTIMOS</span><span className="SecondSpanTittle">INGRESOS</span></div>}
             <div className="ArrivalShowcase">
 
                 <div className="ShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>

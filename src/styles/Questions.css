@@ -264,6 +264,245 @@ display: flex;
 
 }
 
+@media (min-width: 500px) and (max-width: 1024px) {
+
+.MainQuestions-Mobile {
+
+ width: 100vw;
+ height: 90dvh;
+
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: 70%;
+
+}
+
+.MainQuestionsContainer {
+
+ border: solid 2.5px #FFFFFF;
+ width: 90%;
+ height: calc(90% + 15px);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: center;
+ background-color: rgb(4, 6, 5, 0.8);
+   
+}
+
+.TittleContainer {
+
+ width: 100%;
+ height: 20%;
+
+ /* background-color: red; */
+
+ color: #FFFFFF;
+ font-weight: 100;
+ font-size: 9vw;
+ font-family: "ANTON", sans-serif;
+
+ text-align: center;
+ line-height: 110%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+  border-bottom: solid 2.5px #FFFFFF;
+
+
+}
+
+.QuestionContainerUnactive {
+
+ width: 100%;
+ height: calc(12.96dvh + 2.4px);
+
+ /* solia ser 16%, queda 17.5% para la respuesta (cada uno debe tener 12.5% sin al respuesta activa y 30% con activa (height)*/
+
+ /* QuestionLogo, QuestionTittle y QuestionOpenSymbol pasan de 100% height a 50% cuando se activa la respuesta */
+ 
+ /* align items pasa de center a start cuando se activa la respuesta */
+
+ /* con la respuesta desactiva align items debe ser center, la height 12.5% */
+
+ /* TODAS LAS MEDIDAS NECESARIAS ESTAN EN LA TABLET */
+ 
+ border-bottom: solid 2.5px #FFFFFF;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: start;
+ align-items: center;
+ flex-wrap: wrap;
+
+  overflow-y: hidden;
+
+}
+
+.QuestionContainerActive {
+
+    height: calc(24.3dvh + 4.5px);
+
+}
+
+.QuestionContainerWitnessActive {
+
+    height: calc(10.125dvh + 1.875px);
+
+}
+
+.QuestionLogo {
+
+    width: 25%;
+    height: calc(12.96dvh + 2.4px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* background-color: red; */
+
+}
+
+.QuestionLogoMark {
+
+  background: linear-gradient(
+    145deg,
+    #ff2a2a 0%,
+    #b21010 45%,
+    #5a0707 100%
+  );
+
+  box-shadow:
+    0 0 0 1px rgba(255, 60, 60, 0.25) inset,
+    0 4px 12px rgba(0, 0, 0, 0.4),
+    0 0 14px rgba(237, 28, 36, 0.35); 
+    
+ width: 57.778%;
+ height: 13vw;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border-radius: 10px;
+
+}
+
+.QuestionLogoMark::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0) 46%
+  );
+
+  pointer-events: none;
+}
+
+.QuestionLogoPic {
+
+ object-fit: contain;
+ height: fit-content;
+ width: 70%;
+
+}
+
+.QuestionTittle {
+
+ width: 60%;
+height: calc(12.96dvh + 2.4px);
+
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: start;
+
+}
+
+.QuestionTittleSpan {
+
+ color: #FFFFFF;
+ font-weight: 500;
+ font-size: 4vw;
+ font-family: "Roboto Flex", sans-serif;
+
+ width: 90%;
+ height: 60%;
+
+ text-align: left;
+ display: flex;
+ align-items: center;
+
+ margin-left: 2px;
+
+}
+
+.QuestionOpenSymbol {
+
+ width: 15%;
+height: calc(12.96dvh + 2.4px);
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.QuestionSymbolPic {
+
+ width: 55%;
+ height: fit-content;
+ object-fit: contain;
+
+}
+
+.QuestionAnswer {
+
+ width: 100%;
+height: calc(12.96dvh + 2.4px);
+ background-color: rgb(196, 17, 23, 0.6);
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.QuestionAnswerText {
+
+ color: #FFFFFF;
+ font-weight: 450;
+ font-size: 3.25vw;
+ font-family: "Roboto Flex", sans-serif;
+
+ width: 95%;
+ height: auto;
+ text-align: left;
+
+ /* margin-bottom: 3%; */
+
+}
+
+.HalfElementWitnessActive {
+
+    height: calc(10.125dvh + 1.875px);
+
+}
+  
+}
+
 @media (max-width: 499px) {
 
 .MainQuestions-Mobile {

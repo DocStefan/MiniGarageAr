@@ -69,7 +69,7 @@ function Questions() {
     })
   }
 
-  if (screen === "MOBILE") {
+  if (screen === "MOBILE" || screen === "TABLET") {
 
     return (
 
