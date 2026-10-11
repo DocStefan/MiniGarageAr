@@ -30,11 +30,11 @@ function Questions() {
 
   }
 
-  const [questionStatusManager, setQuestionStatusManager] = useState<questionData[]>([{ Tittle: "¿Cuales son sus formas de pago?", img: formasdepago, Answer: (<>Podés pagar por transferencia.<br />Una vez que la hagas, mandanos el comprobante por Instagram y listo, ¡confirmamos tu compra!</>), ClassStatus: "QuestionContainerUnactive", FirstRender: true },
+  const [questionStatusManager, setQuestionStatusManager] = useState<questionData[]>([{ Tittle: "¿Cuales son sus formas de pago?", img: formasdepago, Answer: (<>Podés pagar por transferencia.<br />Una vez que la hagas deberas mandar el comprobante por Instagram.</>), ClassStatus: "QuestionContainerUnactive", FirstRender: true },
   { Tittle: "¿Realizan envios a todo el pais?", img: delivery, Answer: <>¡Sí! Realizamos envíos a todo el país. <br />Podés elegir el servicio de mensajería que prefieras.</>, ClassStatus: "QuestionContainerUnactive", FirstRender: true },
   { Tittle: "¿Tienen puntos de retiro?", img: pickup, Answer: <>¡Sí! Tenemos 2 puntos de retiro. <br />Laprida 3102, Villa Martelli <br />Belgrano 3165, Munro</>, ClassStatus: "QuestionContainerUnactive", FirstRender: true },
-  { Tittle: "¿En cuanto tiempo llega mi compra?", img: tiempollegada, Answer: <>Tu compra se despacha al día siguiente de la confirmación del pago. <br />El tiempo de entrega dependerá del servicio de mensajería elegido.</>, ClassStatus: "QuestionContainerUnactive", FirstRender: true },
-  { Tittle: "¿Como confirmo mi compra?", img: confirmacion, Answer: <>Una vez realizado tu pedido, deberás enviar el comprobante de pago a nuestra cuenta de Instagram para confirmar tu compra.</>, ClassStatus: "QuestionContainerUnactive", FirstRender: true }
+  { Tittle: "¿En cuanto tiempo llega mi compra?", img: tiempollegada, Answer: <>Despachamos al día siguiente del pago. El tiempo de entrega depende del envío elegido.</>, ClassStatus: "QuestionContainerUnactive", FirstRender: true },
+  { Tittle: "¿Como confirmo mi compra?", img: confirmacion, Answer: <>Se confirma enviendo el comprobante de pago a nuestro Instagram</>, ClassStatus: "QuestionContainerUnactive", FirstRender: true }
 
   ])
 
@@ -75,7 +75,7 @@ function Questions() {
 
     return (
 
-      <div className="MainQuestions-Mobile" id="Questions" onClick={() => {scrollTo("Questions")}} style={{ backgroundImage: `url("${fondopreguntas}")` }}>
+      <div className="MainQuestions-Mobile" id="Questions" style={{ backgroundImage: `url("${fondopreguntas}")` }}>
 
         <div className="MainQuestionsContainer">
 
@@ -93,7 +93,7 @@ function Questions() {
 
                 <div className={data.FirstRender ? "QuestionOpenSymbol" : data.isActive ? "QuestionOpenSymbol" : "QuestionOpenSymbol HalfElementWitnessActive"}><img className="QuestionSymbolPic" src={data.isActive ? minusquestion : plusquestion}></img></div>
 
-                <div className={data.FirstRender ? "QuestionAnswer" : data.isActive ? "QuestionAnswer" : "QuestionAnswer HalfElementWitnessActive"}><span className="QuestionAnswerText" style={{ marginBottom: data.isActive ? "4.5%" : "0%" }}>{data.Answer}</span></div>
+                <div className={data.FirstRender ? "QuestionAnswer" : data.isActive ? "QuestionAnswer" : "QuestionAnswer HalfElementWitnessActive"}><span className="QuestionAnswerText" style={{ marginBottom: data.isActive ? "4.5%" : "0%", visibility: data.isActive ? "visible" : "hidden" }}>{data.Answer}</span></div>
 
               </div>
 

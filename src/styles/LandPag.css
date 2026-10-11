@@ -345,7 +345,7 @@ background: linear-gradient(180deg,rgba(4, 6, 5, 1) 0%, rgba(4, 6, 5, 0) 100%);
  .MaindLand-Mobile {
 
  width: 100vw;
- height: 100dvh;
+ height: 100vh;
 
  position: relative;
 

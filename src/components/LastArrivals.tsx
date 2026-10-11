@@ -21,7 +21,7 @@ function LastArrivals() {
 
     return (
 
-        <div className="LastArrivals-Mobile" id="Arrivals" onClick={() => {scrollTo("Arrivals")}}>
+        <div className="LastArrivals-Mobile" id="Arrivals" onClick={() => { if(screen === "PC") {scrollTo("Arrivals")}}}>
 
           <div className="ArrivalsTittle"><span className="FirstSpanTittle">ULTIMOS</span><span className="SecondSpanTittle">INGRESOS</span></div>
 

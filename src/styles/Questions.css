@@ -508,7 +508,7 @@ height: calc(12.96dvh + 2.4px);
 .MainQuestions-Mobile {
 
  width: 100vw;
- height: 90dvh;
+ height: 90vh;
 
 
  display: flex;
@@ -562,7 +562,7 @@ height: calc(12.96dvh + 2.4px);
 .QuestionContainerUnactive {
 
  width: 100%;
- height: calc(12.96dvh + 2.4px);
+ height: calc(12.96vh + 2.4px);
 
  /* solia ser 16%, queda 17.5% para la respuesta (cada uno debe tener 12.5% sin al respuesta activa y 30% con activa (height)*/
 
@@ -588,20 +588,20 @@ height: calc(12.96dvh + 2.4px);
 
 .QuestionContainerActive {
 
-    height: calc(24.3dvh + 4.5px);
+    height: calc(24.3vh + 4.5px);
 
 }
 
 .QuestionContainerWitnessActive {
 
-    height: calc(10.125dvh + 1.875px);
+    height: calc(10.125vh + 1.875px);
 
 }
 
 .QuestionLogo {
 
     width: 25%;
-    height: calc(12.96dvh + 2.4px);
+    height: calc(12.96vh + 2.4px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -661,7 +661,7 @@ height: calc(12.96dvh + 2.4px);
 .QuestionTittle {
 
  width: 60%;
-height: calc(12.96dvh + 2.4px);
+height: calc(12.96vh + 2.4px);
 
  display: flex;
  flex-direction: column;
@@ -691,7 +691,7 @@ height: calc(12.96dvh + 2.4px);
 .QuestionOpenSymbol {
 
  width: 15%;
-height: calc(12.96dvh + 2.4px);
+height: calc(12.96vh + 2.4px);
 
  display: flex;
  justify-content: center;
@@ -710,7 +710,7 @@ height: calc(12.96dvh + 2.4px);
 .QuestionAnswer {
 
  width: 100%;
-height: calc(12.96dvh + 2.4px);
+height: calc(12.96vh + 2.4px);
  background-color: rgb(196, 17, 23, 0.6);
 
  display: flex;
@@ -736,7 +736,7 @@ height: calc(12.96dvh + 2.4px);
 
 .HalfElementWitnessActive {
 
-    height: calc(10.125dvh + 1.875px);
+    height: calc(10.125vh + 1.875px);
 
 }
 
