@@ -4,6 +4,7 @@ import LandPag from './components/LandPag'
 import LastArrivals from './components/LastArrivals'
 import Questions from './components/Questions'
 import Footer from './components/Footer'
+import Catalogue from './components/Catalogue'
 import { ScrollProvider } from './customHooks/useScroll'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
 
         <Routes>
           <Route path='/' element={[<NavBar />, <LandPag />, <LastArrivals />, <Questions />, <Footer />]} />
-          <Route path='/catalogo' element={[<NavBar />]} />
+          <Route path='/catalogo' element={[<NavBar />, <Catalogue />]} />
           <Route path='/informacion' element={[<NavBar />]} />
           <Route path='/catalogo/prod:' element={[<NavBar />]} />         
         </Routes>

@@ -77,6 +77,8 @@ function Questions() {
 
       <div className="MainQuestions-Mobile" id="Questions" style={{ backgroundImage: `url("${fondopreguntas}")` }}>
 
+        <div className="PicDegradeQuestionTop"></div>
+
         <div className="MainQuestionsContainer">
 
           <div className="TittleContainer">Preguntas frecuentes</div>
@@ -113,13 +115,13 @@ function Questions() {
 
       <div className="MainQuestions-Mobile" id="Questions" onClick={() => {scrollTo("Questions")}} style={{ backgroundImage: `url("${fondopreguntas}")` }}>
 
+        <div className="PicDegradeQuestionTop"></div>
+
         <div className="MainQuestionsContainer">
 
           <div className="TittleContainer">Preguntas frecuentes</div>
 
           <div className="QuestionsDataContainer">
-
-
 
             {questionStatusManager.map((data, index) => (
               <div
@@ -158,7 +160,6 @@ function Questions() {
                 </div>
               </div>
             ))}
-
 
           </div>
 
