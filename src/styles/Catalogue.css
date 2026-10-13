@@ -1,0 +1,697 @@
+/* .
+
+PALETA:
+
+NEGRO: #040605
+GRIS OSCURO: #373C3D
+BLANCO: #FFFFFF
+ROJO-LIGHT: #E60410
+ROJO-DARK: #C41117
+
+. */
+
+.MainCatalogue {
+
+    background-color: #040605;
+    width: 100vw;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.CatalogueTittle {
+
+    width: 95%;
+    height: fit-content;
+    font-family: "Dela Gothic One", sans-serif;
+    font-size: 7.5vw;
+    color: #FFFFFF;
+    font-weight: 600;
+    margin-top: 10vh;
+
+}
+
+.CatalogueSearchAndFilter {
+
+    width: 95%;
+    height: 4.5vh;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 2.5%;
+
+}
+
+.SearchBar {
+
+    width: 60%;
+    height: 100%;
+
+    position: relative;
+
+}
+
+.SearchInputLogo {
+
+ position: absolute;
+ width: 10%;
+ height: fit-content;
+
+ object-fit: contain;
+ left: 12.5px;
+ top: 17.5%;
+
+}
+
+.SearchInput {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    padding-left: 47.5px;
+    padding-right: 10px;
+
+    background-color: #242424;
+    color: #E5E5E5;
+
+    border: 1px solid #555555;
+    border-radius: 8px;
+
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    color: #999999;
+
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.SearchInput::placeholder {
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    color: #999999;}
+
+.SearchInput:focus {
+    border-color: #A0A0A0;
+    box-shadow: 0 0 0 2px rgba(180, 180, 180, 0.15);
+}
+
+.SearchInput:hover {
+    border-color: #777777;
+}
+
+.SearchInput::-webkit-search-cancel-button {
+    display: none;
+}
+
+.OpenFiltersButton {
+
+ width: 37.5%;
+ height: 100%;
+
+
+
+}
+
+.FilterButton {
+
+ width: 100%;
+ height: 100%;
+ border-radius: 8px;
+ background-color: #E60410;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+
+
+     box-shadow: 0 0 0 2px rgba(180, 180, 180, 0.15);
+
+     border: none;
+
+}
+
+.ButtonFilterText {
+
+     font-family: "Roboto Flex", sans-serif;
+    font-size: 4.2vw;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 1%;
+
+}
+
+.FilterButtonLogo {
+
+ width: 15%;
+ height: fit-content;
+ object-fit: contain;
+
+ margin: 2.5px;
+
+}
+
+.FiltersMenu {
+
+ width: 95%;
+ height: 30vh;
+
+ margin-top: 2.5%;
+
+ background-color: #242424;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: center;
+ flex-wrap: wrap;
+
+  border: 2px solid #555555;
+  box-shadow: 0 0 0 2px rgba(180, 180, 180, 0.15);
+  border-radius: 7.5px;
+
+  overflow: hidden;
+
+}
+
+.FilterOption {
+
+ width: 50%;
+ height: 80%;
+ /* background-color: gray; */
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: start;
+
+ overflow: hidden;
+
+ border-bottom: 2px solid #555555;
+ 
+
+}
+
+.FilterOptionTittle {
+
+ color: rgb(255, 255, 255, 0.9);
+ font-family: "Anton", sans-serif;
+ font-size: 5vw;
+ font-weight: 100;
+
+ margin-left: 7.5px;
+ margin-top: 2px;
+ letter-spacing: 1px;
+
+ height: 15%;
+
+}
+
+.ScrollableOptionContainer {
+
+ width: 100%;
+ height: 85%;
+ overflow-y: scroll;
+ overflow-x: hidden;
+
+  display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: start;
+
+}
+
+.FilterMenuUption {
+
+
+    font-family: "Roboto Flex", sans-serif;
+    font-size: 5vw;
+    font-weight: 500;
+    color: #999999;
+    width: 100%;
+
+    margin: 5px;
+    margin-left: 10px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+
+    column-gap: 4%;
+
+}
+
+.SquareInput {
+  appearance: none;
+  -webkit-appearance: none;
+
+  width: 17.5px;
+  height: 17.5px;
+  margin: 0;
+
+  background-color: #292929;
+  border: 1px solid #777;
+  border-radius: 4px;
+
+  cursor: pointer;
+  display: inline-grid;
+  place-content: center;
+}
+
+.SquareInput:checked {
+  background-color: #ff6600;
+  border-color: #ff6600;
+}
+
+.SquareInput:checked::before {
+  content: "✓";
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.SquareInput:hover {
+  border-color: #ff6600;
+}
+
+.OpenedFilterButtons {
+
+ height: 19%;
+ width: 50%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.SelectedFilters {
+
+ width: 90%;
+ height: 75%;
+
+ border-radius: 10px;
+ background-color: #E60410;
+ color: #FFFFFF ;
+ font-family: "Roboto Flex", sans-serif;
+ font-size: 4.5vw;
+ font-weight: 500;
+
+ border: none;
+
+}
+
+.SelectedFilterSection {
+
+ width: 95%;
+ height: 5vh;
+ margin-top: 2.5%;
+
+ /* background-color: red; */
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.ActiveFiltersPanel {
+
+ width: 42.5%;
+ height: 100%;
+ 
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+
+ overflow-x: scroll;
+ overflow-y: hidden;
+
+ column-gap: 7.5px;
+ 
+}
+
+.DeleteFiltersQuickButton {
+
+  width: fit-content;
+ height: 80%;   
+
+ font-family: "Roboto Flex", sans-serif;
+ color: #FFFFFF;
+ font-size: 4vw;
+ font-weight: 400;
+
+ background-color: transparent;
+
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+
+ border: 2px solid #E60410;
+ border-radius: 10px;
+
+}
+
+.DeleteFiltersQuickButtonLogo {
+
+ width: 12.5px;
+ height: 100%;
+ object-fit: contain;
+ margin-left: 10px;
+ margin-right: 5px;
+
+
+}
+
+.CleanFiltersAndNuM {
+
+ width: 57.5%;
+ height: 100%;
+ /* background-color: wheat; */
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.CleanFiltersQuickButton {
+
+ width: 60%;
+ height: 80%;   
+
+ font-family: "Roboto Flex", sans-serif;
+ color: #FFFFFF;
+ font-size: 4vw;
+ font-weight: 400;
+
+ background-color: transparent;
+
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+
+ border: 2px solid gray;
+ border-radius: 10px;
+
+}
+
+.CleanFiltersQuickButtonLogo {
+
+ width: 15%;
+ height: 100%;
+ object-fit: contain;
+
+}
+
+
+.ResultsCount {
+
+ font-family: "Roboto Flex", sans-serif;
+ color: #A0A0A0;
+ font-size: 3vw;
+ font-weight: 400;
+
+}
+
+.ResultsSection {
+
+ margin-top: 2.5%;   
+ width: 95%;
+ min-height: 72.5vh;
+
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: start;
+ row-gap: 15px;
+
+}
+
+.CatalogueShowcasePostBox {
+
+ width: 47.5%;
+ height: 30vh;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: center;
+
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: 50%;
+
+ border: solid 2px #373C3D;
+ border-radius: 15px;
+
+ overflow: hidden;
+ position: relative;
+
+}
+
+.CatalogueDataImage {
+
+ width: 100%;
+ height: 60%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ /* background-color: red; */
+
+}
+
+.CatalogueDataImageContainer {
+
+ width: fit-content;
+ height: 92.5%;
+
+ object-fit: contain;
+
+}
+
+.CatalogueDataText {
+
+ width: 100%;
+ height: 40%;
+
+ background-color: #040605;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: center;
+ 
+}
+
+.CatalogueTextNAME {
+
+ font-family: "Roboto flex", system-ui;
+ color: #FFFFFF;
+ font-size: 3.5vw;
+ font-weight: 600;
+
+ width: 95%;
+ height: 25%;
+ text-align: start;
+
+ display: flex;
+ align-items: center;
+
+}
+
+.CatalogueTextBRAND {
+
+ font-family: "Roboto flex", system-ui;
+ color: rgb(255, 255, 255, 0.75);
+ font-size: 3vw;
+ font-weight: 600;
+
+ width: 95%;
+ height: fit-content;
+ text-align: start;
+
+}
+
+.CatalogueTextPRICE {
+
+ font-family: "Roboto flex", system-ui;
+ color: #f10f1a;
+ font-size: 4.5vw;
+ font-weight: 700;
+
+ width: 95%;
+ height: fit-content;
+ text-align: start;
+
+}
+
+.CatalogueFavIconCont {
+
+ position: absolute;
+
+ right: 2%;
+ top: 1.5%;
+
+}
+
+.CatalogueFavIcon {
+
+ color: #E60410;
+ font-size: 6vw;
+ font-weight: 400;
+
+}
+
+.CatalogueLoadingShowcasePostBox {
+
+ width: 47.5%;
+ height: 30vh;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: start;
+
+ border: solid 2px #373C3D;
+ border-radius: 15px;
+
+ overflow: hidden;
+ position: relative;
+
+ cursor: default;
+
+}
+
+.CatalogueLoadingPic { 
+
+ width: 90%;
+ height: 60%;
+
+ background-color: rgb(29, 27, 27);
+ border-radius: 20px;
+
+ margin-left: 5%;
+ margin-right: 5%;
+
+
+}
+
+.CatalogueLoadingName {
+
+ width: 90%;
+ height: 7.5%;
+
+  background-color: rgb(29, 27, 27);
+ border-radius: 20px;
+
+  margin-left: 5%;
+ margin-right: 5%;
+
+}
+
+.CatalogueLoadingBrand {
+
+  width: 90%;
+  height: 6%;
+
+  background-color: rgb(29, 27, 27);
+  border-radius: 20px;
+
+   margin-left: 5%;
+ margin-right: 5%;
+
+}
+
+.CatalogueLoadingPrice {
+
+   width: 40%;
+  height: 8%;
+
+  background-color: rgb(29, 27, 27);
+  border-radius: 20px;
+  
+ margin-left: 5%;
+ 
+}
+
+.CataloguePaginator {
+
+ width: 100%;
+ height: 7.5vh;
+
+ display: flex;
+ justify-content: start;
+ align-items: center;
+
+}
+
+.CatalogueMaxLongitude {
+
+ width: 60%;
+ height: 100%;
+ background-color: black;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+
+}
+
+.PageManager {
+
+ width: 10%;
+ height: 42.5%;
+
+ background-color: transparent;
+ border: solid 2px #373C3D;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ font-family: "Dela Gothic Sans", sans-serif;
+ font-size: 3.75vw;
+ font-weight: 500;
+ color: #FFFFFF;
+
+}
+
+/* .FirstSign {}
+
+.LastSign {} */
+
+.FirstSignPic {
+
+ width: 60%;
+ height: fit-content;
+ object-fit: contain;
+
+ transform: rotateZ(90deg);
+
+}
+
+.LastSignPic {
+
+ width: 60%;
+ height: fit-content;
+ object-fit: contain;
+
+  transform: rotateZ(270deg);
+
+
+}
