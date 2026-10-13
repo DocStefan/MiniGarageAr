@@ -163,10 +163,9 @@ function Catalogue() {
          <div className="ActiveFiltersPanel">
 
            <button type="button" className="DeleteFiltersQuickButton">Filtro<img className="DeleteFiltersQuickButtonLogo" src={close}></img></button>
-                      <button type="button" className="DeleteFiltersQuickButton">Filtro<img className="DeleteFiltersQuickButtonLogo" src={close}></img></button>
            <button type="button" className="DeleteFiltersQuickButton">Filtro<img className="DeleteFiltersQuickButtonLogo" src={close}></img></button>
            <button type="button" className="DeleteFiltersQuickButton">Filtro<img className="DeleteFiltersQuickButtonLogo" src={close}></img></button>
-
+           <button type="button" className="DeleteFiltersQuickButton">Filtro<img className="DeleteFiltersQuickButtonLogo" src={close}></img></button>
 
          </div>
 
@@ -231,7 +230,7 @@ function Catalogue() {
 
             <div className="PageManager FirstSign"><img src={down} className="FirstSignPic"></img></div>
 
-                        <div className="PageManager" style={{backgroundColor: "#E60410", border: "none", height: "calc(42.5% + 4px)", width: "calc(10% + 4px)"}}>1</div>
+                        <div className="PageManager PageManagerSelectedOption">1</div>
                         <div className="PageManager">2</div>
                         <div className="PageManager">3</div>
 
