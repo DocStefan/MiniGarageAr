@@ -17,7 +17,7 @@ function App() {
       <ScrollToTop />  
         <Routes>
           <Route path='/' element={[<NavBar />, <LandPag />, <LastArrivals />, <Questions />, <Footer />]} />
-          <Route path='/catalogo' element={[<NavBar />, <Catalogue />]} />
+          <Route path='/catalogo' element={[<NavBar />, <Catalogue />, <Footer />]} />
           <Route path='/informacion' element={[<NavBar />]} />
           <Route path='/catalogo/prod:' element={[<NavBar />]} />         
         </Routes>
