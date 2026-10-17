@@ -80,8 +80,10 @@ function Catalogue() {
   return (
     
     <div className="MainCatalogue">
-        
+
        <div className="CatalogueTittle">CATALOGO</div>
+
+       {screen === "PC" ? "" : <>
 
        <div className="CatalogueSearchAndFilter">
 
@@ -177,7 +179,7 @@ function Catalogue() {
 
          </div>
 
-       </div>
+       </div> </>}
 
        <div className="ResultsSection">
 
