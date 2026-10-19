@@ -83,8 +83,6 @@ function Catalogue() {
 
        <div className="CatalogueTittle">CATALOGO</div>
 
-       {screen === "PC" ? "" : <>
-
        <div className="CatalogueSearchAndFilter">
 
          <div className="SearchBar">
@@ -179,7 +177,7 @@ function Catalogue() {
 
          </div>
 
-       </div> </>}
+       </div>
 
        <div className="ResultsSection">
 

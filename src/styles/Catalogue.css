@@ -30,7 +30,7 @@ ROJO-DARK: #C41117
     width: 95%;
     height: fit-content;
     font-family: "Dela Gothic One", sans-serif;
-    font-size: 5vw;
+    font-size: 3vw;
     color: #FFFFFF;
     font-weight: 600;
     margin-top: 10vh;
@@ -41,7 +41,7 @@ ROJO-DARK: #C41117
 .CatalogueSearchAndFilter {
 
     width: 95%;
-    height: 7.5vh;
+    height: 4vh;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
@@ -54,7 +54,7 @@ ROJO-DARK: #C41117
 
 .SearchBar {
 
-    width: 60%;
+    width: 74%;
     height: 100%;
 
     position: relative;
@@ -64,12 +64,12 @@ ROJO-DARK: #C41117
 .SearchInputLogo {
 
  position: absolute;
- width: 4.5%;
+ width: 1.5%;
  height: fit-content;
 
  object-fit: contain;
- left: 12.5px;
- top: 13.5%;
+ left: 10px;
+ top: 20%;
 
 }
 
@@ -77,7 +77,7 @@ ROJO-DARK: #C41117
     width: 100%;
     height: 100%;
     padding: 12px;
-    padding-left: 75px;
+    padding-left: 37.5px;
     padding-right: 10px;
 
     background-color: #242424;
@@ -87,8 +87,8 @@ ROJO-DARK: #C41117
     border-radius: 8px;
 
     font-family: "Roboto Flex", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
+    font-size: 1vw;
+    font-weight: 400;
     color: #999999;
 
     outline: none;
@@ -97,8 +97,8 @@ ROJO-DARK: #C41117
 
 .SearchInput::placeholder {
     font-family: "Roboto Flex", sans-serif;
-    font-size: 2.5vw;
-    font-weight: 600;
+    font-size: 1vw;
+    font-weight: 400;
     color: #999999;}
 
 .SearchInput:focus {
@@ -116,7 +116,7 @@ ROJO-DARK: #C41117
 
 .OpenFiltersButton {
 
- width: 37.5%;
+ width: 22.5%;
  height: 100%;
 
 }
@@ -151,16 +151,16 @@ ROJO-DARK: #C41117
 .ButtonFilterText {
 
      font-family: "Roboto Flex", sans-serif;
-    font-size: 3vw;
+    font-size: 1.5vw;
     font-weight: 600;
     color: #FFFFFF;
-    margin-top: 1%;
+    /* margin-top: 1%; */
 
 }
 
 .FilterButtonLogo {
 
- width: 7.5%;
+ width: 5%;
  height: fit-content;
  object-fit: contain;
 
@@ -171,7 +171,7 @@ ROJO-DARK: #C41117
 .FiltersMenu {
 
  width: 95%;
- height: 60vh;
+ height: 45vh;
 
  margin-top: 1.5%;
 
@@ -213,23 +213,27 @@ ROJO-DARK: #C41117
 
  color: rgb(255, 255, 255, 0.9);
  font-family: "Anton", sans-serif;
- font-size: 3vw;
+ font-size: 2vw;
  font-weight: 100;
 
  margin-left: 15px;
  margin-top: 2px;
  letter-spacing: 1px;
 
- height: 20%;
+ height: 15%;
 
  cursor: default;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
 
 }
 
 .ScrollableOptionContainer {
 
  width: 100%;
- height: 80%;
+ height: 85%;
  overflow-y: scroll;
  overflow-x: hidden;
 
@@ -244,7 +248,7 @@ ROJO-DARK: #C41117
 
 
     font-family: "Roboto Flex", sans-serif;
-    font-size: 2.5vw;
+    font-size: 1.7vw;
     font-weight: 500;
     color: #999999;
     width: 100%;
@@ -302,15 +306,15 @@ ROJO-DARK: #C41117
  width: 50%;
 
  display: flex;
- justify-content: center;
+ justify-content: end;
  align-items: center;
 
 }
 
 .SelectedFilters {
 
- width: 55%;
- height: 75%;
+ width: 30%;
+ height: 60%;
 
  display: flex;
  justify-content: center;
@@ -320,12 +324,14 @@ ROJO-DARK: #C41117
  background-color: #E60410;
  color: #FFFFFF ;
  font-family: "Roboto Flex", sans-serif;
- font-size: 3vw;
+ font-size: 1.5vw;
  font-weight: 500;
 
  border: none;
 
  cursor: pointer;
+
+ margin-right: 3%;
 
 }
 
@@ -338,7 +344,7 @@ ROJO-DARK: #C41117
 .SelectedFilterSection {
 
  width: 95%;
- height: 10vh;
+ height: 5vh;
  margin-top: 1%;
 
  /* background-color: red; */
@@ -373,7 +379,7 @@ ROJO-DARK: #C41117
 
  font-family: "Roboto Flex", sans-serif;
  color: #FFFFFF;
- font-size: 1.75vw;
+ font-size: 1.25vw;
  font-weight: 400;
 
  background-color: transparent;
@@ -389,7 +395,7 @@ ROJO-DARK: #C41117
 
 .DeleteFiltersQuickButtonLogo {
 
- width: 22.5px;
+ width: 15px;
  height: 100%;
  object-fit: contain;
  margin-left: 20px;
@@ -402,7 +408,7 @@ ROJO-DARK: #C41117
 
 .CleanFiltersAndNuM {
 
- width: 37.5%;
+ width: 22.5%;
  height: 100%;
  /* background-color: wheat; */
 
@@ -419,7 +425,7 @@ ROJO-DARK: #C41117
 
  font-family: "Roboto Flex", sans-serif;
  color: #FFFFFF;
- font-size: 2vw;
+ font-size: 1.25vw;
  font-weight: 400;
 
  background-color: transparent;
@@ -443,7 +449,7 @@ ROJO-DARK: #C41117
 
 .CleanFiltersQuickButtonLogo {
 
- width: 12%;
+ width: 11%;
  height: 100%;
  object-fit: contain;
 
@@ -454,7 +460,7 @@ ROJO-DARK: #C41117
 
  font-family: "Roboto Flex", sans-serif;
  color: #A0A0A0;
- font-size: 2vw;
+ font-size: 1.25vw;
  font-weight: 400;
 
  cursor: default;
@@ -479,7 +485,7 @@ ROJO-DARK: #C41117
 .CatalogueShowcasePostBox {
 
  width: 22.5%;
- height: 70vh;
+ height: 63vh;
 
  display: flex;
  flex-direction: column;
