@@ -1,7 +1,7 @@
 // import React from 'react'
 import "../styles/Catalogue.css"
-import useResponsiveDetect from "../customHooks/responsiveDetect"
-import { useScroll } from "../customHooks/useScroll"
+// import useResponsiveDetect from "../customHooks/responsiveDetect"
+// import { useScroll } from "../customHooks/useScroll"
 import { useNavigate } from "react-router"
 import search from '../assets/search.webp'
 import filter from '../assets/filter.webp'
@@ -19,8 +19,8 @@ import { useState, useRef, useEffect } from "react"
 
 function Catalogue() {
 
- const screen = useResponsiveDetect()
- const scrollTo = useScroll()
+//  const screen = useResponsiveDetect()
+//  const scrollTo = useScroll()
  const navegar = useNavigate()
 
  const [FilterActive, setFilterActive] = useState<boolean>(false)
@@ -30,6 +30,7 @@ function Catalogue() {
 
      interface arrivalsData {
 
+      id: number,
       status: string,
       img: string,
       name: string,
@@ -38,18 +39,18 @@ function Catalogue() {
 
     }
 
-    const lastArrivalsData: arrivalsData[] =  [{status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
-      {status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
-      {status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
-      {status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
-      {status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
-      {status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
-      {status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
-      {status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
-      {status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
-      {status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
-      {status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
-      {status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
+    const lastArrivalsData: arrivalsData[] =  [{id: 1, status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
+      {id: 2, status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
+      {id: 3, status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
+      {id: 4, status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
+      {id: 5, status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
+      {id: 6, status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
+      {id: 7, status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
+      {id: 8, status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
+      {id: 9, status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
+      {id: 10, status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
+      {id: 11, status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
+      {id: 12, status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
     ]
 
 
@@ -197,7 +198,7 @@ function Catalogue() {
 
                   return (
 
-                <div className="CatalogueShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>
+                <div className="CatalogueShowcasePostBox" onClick={() => {navegar(`/catalogo/${data.id}`)}} style={{backgroundImage: `url("${LastBack}")`}}>
 
                     <div className="CatalogueFavIconCont"><span className="material-symbols-outlined CatalogueFavIcon">favorite</span></div>
 

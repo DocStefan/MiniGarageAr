@@ -1,0 +1,107 @@
+/* .
+
+PALETA:
+
+NEGRO: #040605
+GRIS OSCURO: #373C3D
+BLANCO: #FFFFFF
+ROJO-LIGHT: #E60410
+ROJO-DARK: #C41117
+
+. */
+
+.ProductPageMain {
+
+ background-color: #040605;
+ margin-top: 10vh;
+ width: 100vw;
+ height: 90vh;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: center;
+
+ row-gap: 2%;
+
+}
+
+.ProductPicContainer {
+
+ width: 90%;
+ height: 50%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: solid 3px #E60410;
+ border-radius: 20px;
+ margin-top: 5px;
+
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 50% 100%;
+
+  box-shadow: rgb(230, 4, 16, 0.4) 0px 0px 0px 2px, rgb(230, 4, 16, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.ProductPic {
+
+ width: 95%;
+ height: 90%;
+ object-fit: contain;
+
+
+}
+
+.ProductTextsContainer {
+
+ width: 90%;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: start;
+
+ row-gap: 11px;
+
+ /* background-color: red; */
+
+}
+
+.ProductTittle {
+
+
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 600;
+ letter-spacing: 1px;
+ font-size: 8vw;
+ color: #FFFFFF;
+ width: 100%;
+ text-align: left;
+ /* line-height: 110%; */
+
+ /* background-color: wheat; */
+
+}
+
+.ProductLine {
+
+ font-family: "Roboto flex", system-ui;
+ color: rgb(255, 255, 255, 0.75);
+ font-size: 5.25vw;
+ font-weight: 400;
+
+ width: 100%;
+ text-align: left;
+
+}
+
+.ProductPrice {
+
+  font-family: "Roboto flex", system-ui;
+ color: #f10f1a;
+ font-size: 7.5vw;
+ font-weight: 600;
+
+}

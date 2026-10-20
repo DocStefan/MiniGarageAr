@@ -7,6 +7,7 @@ import Footer from './components/Footer'
 import Catalogue from './components/Catalogue'
 import { ScrollProvider } from './customHooks/useScroll'
 import ScrollToTop from './customHooks/ScrollToTop'
+import Product from './components/Product'
 
 function App() {
 
@@ -19,7 +20,7 @@ function App() {
           <Route path='/' element={[<NavBar />, <LandPag />, <LastArrivals />, <Questions />, <Footer />]} />
           <Route path='/catalogo' element={[<NavBar />, <Catalogue />, <Footer />]} />
           <Route path='/informacion' element={[<NavBar />]} />
-          <Route path='/catalogo/prod:' element={[<NavBar />]} />         
+          <Route path='/catalogo/:productId' element={[<NavBar />, <Product />]} />         
         </Routes>
       </ScrollProvider>
     </BrowserRouter>
