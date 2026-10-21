@@ -9,6 +9,12 @@ import produExD from '../assets/produExD.png'
 
 import LastBack from '../assets/LastBack.webp'
 
+import plusProduct from '../assets/plusProduct.webp'
+import minusProduct from '../assets/minusProduct.webp'
+
+import transport from '../assets/transport.webp'
+
+
 
 
 function Product() {
@@ -74,6 +80,42 @@ function Product() {
          <span className="ProductLine">{productManager.line}</span>
 
          <span className="ProductPrice">{new Intl.NumberFormat("es-AR", {style: "currency", currency: "ARS", maximumFractionDigits: 2,}).format(productManager.price)}</span>
+
+      </div>
+
+      <div className="ProductPanel">
+
+        <div className="AddSection">
+
+           <span className="AddSectionTittle">CANTIDAD</span>
+
+           <div className="AddSectionPanel">
+
+             <div className="PanelButtonMinus" style={{backgroundColor: "#373C3D"}}>
+
+               <img className="PanelButtonLogo" src={minusProduct}></img>
+
+             </div>
+
+             <span className="SelectedAddition">0</span>
+
+             <div className="PanelButtonPlus" style={{backgroundColor: "#E60410"}}>
+
+               <img className="PanelButtonLogo" style={{width: "70%"}} src={plusProduct}></img>
+
+             </div>
+
+           </div>
+
+        </div>
+
+        <div className="StockSection">
+
+          <div className="StockLogo"></div>
+
+          <div className="StockNumber"></div>
+
+        </div>
 
       </div>
 
