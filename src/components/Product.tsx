@@ -8,14 +8,10 @@ import produExC from '../assets/produExC.png'
 import produExD from '../assets/produExD.png'
 
 import LastBack from '../assets/LastBack.webp'
-
 import plusProduct from '../assets/plusProduct.webp'
 import minusProduct from '../assets/minusProduct.webp'
-
 import transport from '../assets/transport.webp'
-
-
-
+import cart from '../assets/cart.webp'
 
 function Product() {
 
@@ -47,7 +43,7 @@ function Product() {
     ]
 
  const [idManager, setIdManager] = useState<number>()
- const [productManager, setProductManager] = useState<arrivalsData>({})
+ const [productManager, setProductManager] = useState<arrivalsData>({id: 0, status: "", img: "", name: "", line: "", price: 0})
 
  useEffect(() => {
 
@@ -91,7 +87,7 @@ function Product() {
 
            <div className="AddSectionPanel">
 
-             <div className="PanelButtonMinus" style={{backgroundColor: "#373C3D"}}>
+             <div className="PanelButtonMinus" style={{backgroundColor: "#373C3D", marginLeft: "-1px"}}>
 
                <img className="PanelButtonLogo" src={minusProduct}></img>
 
@@ -99,7 +95,7 @@ function Product() {
 
              <span className="SelectedAddition">0</span>
 
-             <div className="PanelButtonPlus" style={{backgroundColor: "#E60410"}}>
+             <div className="PanelButtonPlus" style={{backgroundColor: "#E60410", marginRight: "-1px"}}>
 
                <img className="PanelButtonLogo" style={{width: "70%"}} src={plusProduct}></img>
 
@@ -111,9 +107,29 @@ function Product() {
 
         <div className="StockSection">
 
-          <div className="StockLogo"></div>
+          <div className="StockLogo">
 
-          <div className="StockNumber"></div>
+            <img className="StockPic" src={transport}></img>
+
+          </div>
+
+          <div className="StockNumber">
+
+            <span className="StockText">EN STOCK: 99</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div className="ProductButtonPanel">
+
+        <div className="AddToCartStuff">
+
+         <img className="AddToCartLogo" src={cart}></img>
+
+         <span className="AddToCartButton">AGREGAR AL CARRITO</span>
 
         </div>
 

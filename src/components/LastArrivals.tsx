@@ -21,6 +21,7 @@ function LastArrivals() {
 
     interface arrivalsData {
 
+      id: number,
       status: string,
       img: string,
       name: string,
@@ -35,10 +36,10 @@ function LastArrivals() {
     //   {status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
     // ])
 
-    const lastArrivalsData: arrivalsData[] =  [{status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
-      {status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
-      {status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
-      {status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
+    const lastArrivalsData: arrivalsData[] =  [{id: 1, status: "VOLVIO", img: produEx, name: "LP Works Lamborghini Huracan Coupe", line: "HW Mainline 2023", price: 19990.00 },
+      {id: 2, status: "NUEVO", img: produExB, name: "'18 Chevrolet Camaro SS", line: "HW Torque 2025", price: 14990.00},
+      {id: 3, status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
+      {id: 4, status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
     ]
 
     return (
@@ -65,7 +66,7 @@ function LastArrivals() {
 
                   return (
 
-                <div className="ShowcasePostBox" style={{backgroundImage: `url("${LastBack}")`}}>
+                <div className="ShowcasePostBox" onClick={() => {navegar(`/catalogo/${data.id}`)}} style={{backgroundImage: `url("${LastBack}")`}}>
 
                     <div className="FavIconCont"><span className="material-symbols-outlined FavIcon">favorite</span></div>
 

@@ -10,32 +10,351 @@ ROJO-DARK: #C41117
 
 . */
 
-.ProductPageMain {
+@media (min-width: 500px) and (max-width: 1024px) {
+
+ .ProductPageMain {
 
  background-color: #040605;
- margin-top: 10vh;
  width: 100vw;
- height: 90vh;
+ height: 100vh;
 
  display: flex;
  flex-direction: column;
  justify-content: start;
  align-items: center;
 
- row-gap: 2%;
+ row-gap: 1.6%;
 
 }
 
 .ProductPicContainer {
 
  width: 90%;
- height: 50%;
+ height: 48%;
  display: flex;
  justify-content: center;
  align-items: center;
  border: solid 3px #E60410;
  border-radius: 20px;
  margin-top: 5px;
+ margin-top: 10vh;
+
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: 50% 100%;
+
+  box-shadow: rgb(230, 4, 16, 0.4) 0px 0px 0px 2px, rgb(230, 4, 16, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+}
+
+.ProductPic {
+
+ width: 95%;
+ height: 90%;
+ object-fit: contain;
+
+
+}
+
+.ProductTextsContainer {
+
+ width: 90%;
+ height: fit-content;
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: start;
+
+ row-gap: 17.5px;
+
+ /* background-color: red; */
+
+}
+
+.ProductTittle {
+
+
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 600;
+ letter-spacing: 1px;
+ font-size: 5.25vw;
+ color: #FFFFFF;
+ width: 100%;
+ text-align: left;
+ /* line-height: 110%; */
+
+ /* background-color: wheat; */
+
+}
+
+.ProductLine {
+
+ font-family: "Roboto flex", system-ui;
+ color: rgb(255, 255, 255, 0.75);
+ font-size: 3.5vw;
+ font-weight: 400;
+
+ width: 100%;
+ text-align: left;
+
+}
+
+.ProductPrice {
+
+  font-family: "Roboto flex", system-ui;
+ color: #f10f1a;
+ font-size: 4.5vw;
+ font-weight: 600;
+
+}
+
+.ProductPanel {
+
+ width: 95%;
+ height: 13.5%;
+
+ background-color: transparent;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ 
+ margin-top: -2%;
+
+}
+
+.AddSection {
+
+ width: 49%;
+ height: 100%;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: space-evenly;
+ align-items: start;
+ 
+ /* background-color: red; */
+
+}
+
+.AddSectionTittle {
+
+font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 450;
+ letter-spacing: 1px;
+ font-size: 5vw;
+ color: #FFFFFF;
+ width: 100%;
+ height: fit-content;
+ text-align: left;
+
+ margin-left: 2.5vw;
+
+}
+
+.AddSectionPanel {
+
+ width: 55%;
+ height: 4vh;
+
+ border-radius: 4vh;
+
+ /* background-color: red; */
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+
+ border: solid 2px #373C3D;
+
+  margin-left: 2vw;
+
+
+}
+
+.PanelButtonPlus, .PanelButtonMinus {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ height: 4vh;
+ width: 4vh;
+
+ border-radius: 50%;
+   
+}
+
+.PanelButtonLogo {
+
+ width: 45%;
+ height: fit-content;
+
+ object-fit: contain;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.SelectedAddition {
+
+font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 750;
+ letter-spacing: 1px;
+ font-size: 3vw;
+ color: #FFFFFF;
+
+ height: 100%;
+ width: fit-content;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+   
+}
+
+.StockSection {
+
+ width: 49%;
+ height: 100%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center; 
+
+}
+
+.StockLogo {
+
+ width: 21%;
+ height: fit-content;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.StockPic {
+
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.StockNumber {
+
+ width: fit-content;
+ height: fit-content;
+
+ display: flex;
+ justify-content: start;
+ align-items: center;
+
+}
+
+.StockText {
+
+font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 450;
+ letter-spacing: 1px;
+ font-size: 4.5vw;
+ color: #FFFFFF;
+ width: 100%;
+ height: fit-content;
+ text-align: center;
+
+}
+
+.ProductButtonPanel {
+
+ width: 95%;
+ height: 7%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+
+ background-color: #E60410;
+
+ border-radius: 100px;
+
+ margin-bottom: 40px;
+
+}
+
+.AddToCartStuff {
+
+ width: 67%;
+ height: 100%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ column-gap: 3%;
+
+}
+
+.AddToCartLogo {
+
+ width: 8.5%;
+ height: 100%;
+ object-fit: contain;
+
+}
+
+.AddToCartButton {
+
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 600;
+ letter-spacing: 1.25px;
+ font-size: 5vw;
+ color: #FFFFFF;
+
+}
+
+}
+
+@media (max-width: 499px) {
+
+.ProductPageMain {
+
+ background-color: #040605;
+ width: 100vw;
+ height: 100vh;
+
+ display: flex;
+ flex-direction: column;
+ justify-content: start;
+ align-items: center;
+
+ row-gap: 1.6%;
+
+}
+
+.ProductPicContainer {
+
+ width: 90%;
+ height: 48%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ border: solid 3px #E60410;
+ border-radius: 20px;
+ margin-top: 5px;
+ margin-top: 10vh;
 
  background-repeat: no-repeat;
  background-size: cover;
@@ -109,7 +428,7 @@ ROJO-DARK: #C41117
 .ProductPanel {
 
  width: 95%;
- height: 15%;
+ height: 13.5%;
 
  background-color: transparent;
 
@@ -138,13 +457,13 @@ ROJO-DARK: #C41117
 font-family: 'Barlow Condensed', sans-serif;
  font-weight: 450;
  letter-spacing: 1px;
- font-size: 7vw;
+ font-size: 7.5vw;
  color: #FFFFFF;
  width: 100%;
  height: fit-content;
  text-align: left;
 
- margin-left: 1vw;
+ margin-left: 1.5vw;
 
 }
 
@@ -162,22 +481,7 @@ font-family: 'Barlow Condensed', sans-serif;
  justify-content: space-between;
  align-items: center;
 
- border: solid 3px #FFFFFF;
- overflow: hidden;
-
-}
-
-.StockSection {
-
- width: 49%;
- height: 100%;
- background-color: yellow;
-
- display: flex;
- flex-direction: row;
- justify-content: space-evenly;
- align-items: center;
- 
+ border: solid 2px #373C3D;
 
 }
 
@@ -223,3 +527,115 @@ font-family: 'Barlow Condensed', sans-serif;
  align-items: center;
    
 }
+
+.StockSection {
+
+ width: 49%;
+ height: 100%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ 
+
+}
+
+.StockLogo {
+
+ width: 27.5%;
+ height: fit-content;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.StockPic {
+
+ width: 100%;
+ height: 100%;
+ object-fit: contain;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.StockNumber {
+
+ width: fit-content;
+ height: fit-content;
+
+ display: flex;
+ justify-content: start;
+ align-items: center;
+
+}
+
+.StockText {
+
+font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 450;
+ letter-spacing: 1px;
+ font-size: 6vw;
+ color: #FFFFFF;
+ width: 100%;
+ height: fit-content;
+ text-align: center;
+
+}
+
+.ProductButtonPanel {
+
+ width: 95%;
+ height: 7%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
+
+ background-color: #E60410;
+
+ border-radius: 100px;
+
+ margin-bottom: 20px;
+
+}
+
+.AddToCartStuff {
+
+ width: 67%;
+ height: 100%;
+
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+
+}
+
+.AddToCartLogo {
+
+ width: 13.5%;
+ height: 100%;
+ object-fit: contain;
+
+}
+
+.AddToCartButton {
+
+ font-family: 'Barlow Condensed', sans-serif;
+ font-weight: 600;
+ letter-spacing: 1.25px;
+ font-size: 6.25vw;
+ color: #FFFFFF;
+
+ margin-bottom: 0.8px;
+
+}
+
+}
+
