@@ -20,7 +20,7 @@ function App() {
           <Route path='/' element={[<NavBar />, <LandPag />, <LastArrivals />, <Questions />, <Footer />]} />
           <Route path='/catalogo' element={[<NavBar />, <Catalogue />, <Footer />]} />
           <Route path='/informacion' element={[<NavBar />]} />
-          <Route path='/catalogo/:productId' element={[<NavBar />, <Product />]} />         
+          <Route path='/catalogo/:productId' element={[<NavBar />, <Product />, <Footer />]} />         
         </Routes>
       </ScrollProvider>
     </BrowserRouter>

@@ -43,7 +43,7 @@ function Product() {
     ]
 
  const [idManager, setIdManager] = useState<number>()
- const [productManager, setProductManager] = useState<arrivalsData>({id: 0, status: "", img: "", name: "", line: "", price: 0})
+ const [productManager, setProductManager] = useState<arrivalsData>({id: 0, status: "", img: produExD, name: "", line: "", price: 0})
 
  useEffect(() => {
 
