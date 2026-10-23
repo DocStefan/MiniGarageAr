@@ -1,6 +1,6 @@
 // import React from 'react'
 import "../styles/Catalogue.css"
-// import useResponsiveDetect from "../customHooks/responsiveDetect"
+import useResponsiveDetect from "../customHooks/responsiveDetect"
 // import { useScroll } from "../customHooks/useScroll"
 import { useNavigate } from "react-router"
 import search from '../assets/search.webp'
@@ -19,7 +19,7 @@ import { useState, useRef, useEffect } from "react"
 
 function Catalogue() {
 
-//  const screen = useResponsiveDetect()
+ const screen = useResponsiveDetect()
 //  const scrollTo = useScroll()
  const navegar = useNavigate()
 
@@ -227,17 +227,7 @@ function Catalogue() {
 
        <div className="CataloguePaginator">
 
-          <div className="CatalogueMaxLongitude">
-
-            <div className="PageManager FirstSign"><img src={down} className="FirstSignPic"></img></div>
-
-                        <div className="PageManager PageManagerSelectedOption">1</div>
-                        <div className="PageManager">2</div>
-                        <div className="PageManager">3</div>
-
-            <div className="PageManager LastSign"><img src={down} className="LastSignPic" ></img></div>
-
-          </div>
+         <button type="button" className="ButtonMoreCatalogue" onClick={() => {}}><div className="ButtonMoreCatalogueText">MAS RESULTADOS{screen === "PC" ? <div className="AnimBlockMoreCatalogue"></div> : ""}</div></button>
 
        </div>
 

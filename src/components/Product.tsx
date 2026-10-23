@@ -63,6 +63,40 @@ function Product() {
 
     <div className="ProductPageMain">
 
+      {/* <div className="LoadingProductPicContainer"></div>
+
+      <div className="LoadingProductTextsContainer">
+
+         <div className="LoadingProductTittle"></div>
+
+         <div className="LoadingProductLine"></div>
+
+         <div className="LoadingProductPrice"></div>
+
+      </div>
+
+      <div className="LoadingProductPanel">
+
+        <div className="LoadingAddSection">
+
+          <div className="LoadingAddSectionTittle"></div>
+
+          <div className="LoadingAddSectionPanel"></div>
+
+        </div>
+
+        <div className="LoadingStockSection">
+
+          <div className="LoadingStockLogo"></div>
+
+          <div className="LoadingStockNumber"></div>
+
+        </div>
+
+      </div>
+
+      <div className="LoadingProductButtonPanel"></div> */}
+
       <div className="ProductPicContainer" style={{backgroundImage: `url("${LastBack}")`}}>
 
       <img className="ProductPic" loading='eager' decoding='async' fetchPriority="high" src={productManager.img}></img>
