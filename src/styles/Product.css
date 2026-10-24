@@ -43,6 +43,27 @@ ROJO-DARK: #C41117
 
  box-shadow: rgb(230, 4, 16, 0.4) 0px 0px 0px 2px, rgb(230, 4, 16, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
+ position: relative;
+
+}
+
+.ProductFavIconCont {
+
+ position: absolute;
+
+ right: 2%;
+ top: 2%;
+
+ cursor: pointer;
+
+}
+
+.ProductFavIcon {
+
+ color: #E60410;
+ font-size: 3.5vw;
+ font-weight: 600;
+
 }
 
 .ProductPic {
@@ -548,6 +569,27 @@ font-family: 'Barlow Condensed', sans-serif;
 
   box-shadow: rgb(230, 4, 16, 0.4) 0px 0px 0px 2px, rgb(230, 4, 16, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
 
+ position: relative;
+
+}
+
+.ProductFavIconCont {
+
+ position: absolute;
+
+ right: 2%;
+ top: 2%;
+
+  cursor: pointer;
+
+}
+
+.ProductFavIcon {
+
+ color: #E60410;
+ font-size:  10vw;
+ font-weight: 600;
+
 }
 
 .ProductPic {
@@ -1026,6 +1068,27 @@ font-family: 'Barlow Condensed', sans-serif;
  background-position: 50% 100%;
 
   box-shadow: rgb(230, 4, 16, 0.4) 0px 0px 0px 2px, rgb(230, 4, 16, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+
+ position: relative;
+
+}
+
+.ProductFavIconCont {
+
+ position: absolute;
+
+ right: 2%;
+ top: 2%;
+
+  cursor: pointer;
+
+}
+
+.ProductFavIcon {
+
+ color: #E60410;
+ font-size:  9vw;
+ font-weight: 500;
 
 }
 

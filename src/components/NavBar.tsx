@@ -17,7 +17,7 @@ function NavBar() {
     logo: string,
     text: string,
     active?: boolean,
-    route?: string
+    route?: string,
     link?: string 
 
   }
@@ -55,10 +55,13 @@ function NavBar() {
 
   useEffect(() => {
 
-    setOptionsManager(prevArr => prevArr.map((data,) => ({
+    setOptionsManager(prevArr => prevArr.map((data) => ({
 
       ...data,
-      active: location.pathname === data.route
+      active: data.route ? data.route === "/" ? location.pathname === "/" : location.pathname.startsWith(data.route) : false
+
+      // active: location.pathname === data.route
+      // solia ser esta la linea antes de hacer el product page (/catalogo/25)
       
     })))
 

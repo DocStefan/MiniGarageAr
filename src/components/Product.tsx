@@ -99,7 +99,9 @@ function Product() {
 
       <div className="ProductPicContainer" style={{backgroundImage: `url("${LastBack}")`}}>
 
-      <img className="ProductPic" loading='eager' decoding='async' fetchPriority="high" src={productManager.img}></img>
+        <img className="ProductPic" loading='eager' decoding='async' fetchPriority="high" src={productManager.img}></img>
+
+        <div className="ProductFavIconCont"><span className="material-symbols-outlined ProductFavIcon">favorite</span></div>
 
       </div>
 
