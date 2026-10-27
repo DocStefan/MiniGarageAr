@@ -13,6 +13,7 @@ import produExB from '../assets/produExB.png'
 import produExC from '../assets/produExC.png'
 import produExD from '../assets/produExD.png'
 import LastBack from '../assets/LastBack.webp'
+import noResults from '../assets/noResults.webp'
 import { useState, useRef, useEffect } from "react"
 
 
@@ -52,6 +53,9 @@ function Catalogue() {
       {id: 11, status: "NUEVO", img: produExC, name: "'96 Porsche Carrera", line: "HW Nightburnerz 2024", price: 22990.00},
       {id: 12, status: "VOLVIO", img: produExD, name: "Ferrari SF90 Stradale", line: "HW Factory Fresh 2026", price: 24990.00},
     ]
+
+    // const lastArrivalsData: arrivalsData[] = []
+    // esto es para testear cuando no hay resultados segun los filtros insertados
 
 
    useEffect(() => {
@@ -180,7 +184,7 @@ function Catalogue() {
 
        </div>
 
-       <div className="ResultsSection">
+       {lastArrivalsData.length != 0 ? <div className="ResultsSection">
 
               {/* <div className="CatalogueLoadingShowcasePostBox">
 
@@ -223,13 +227,25 @@ function Catalogue() {
               )
                })}
 
+       </div> : 
+       
+       <div className="NoResultsSection">
+
+         <img src={noResults} className="NoResultsLogo"></img>
+
+         <span className="NoResultsText" style={{color: "#FFFFFF"}}>NO SE ENCONTRARON</span>
+
+         <span className="NoResultsText" style={{color: "#E60410", marginTop: "4px"}}>RESULTADOS</span>
+
        </div>
 
-       <div className="CataloguePaginator">
+       }
+
+{lastArrivalsData.length != 0 ? <div className="CataloguePaginator">
 
          <button type="button" className="ButtonMoreCatalogue" onClick={() => {}}><div className="ButtonMoreCatalogueText">MAS RESULTADOS{screen === "PC" ? <div className="AnimBlockMoreCatalogue"></div> : ""}</div></button>
 
-       </div>
+       </div> : ""}
 
     </div>
 
