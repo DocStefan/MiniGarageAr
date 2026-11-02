@@ -1,5 +1,5 @@
 // import React from 'react'
-import { useState, useRef, useEffect} from "react"
+import { useState, useRef, useEffect, use} from "react"
 import "../styles/NavBarStyle.css"
 import LogoMiniGarageAr from '../assets/LogoMiniGarageAr.webp'
 import home from '../assets/home.webp'
@@ -7,6 +7,10 @@ import info from '../assets/info.webp'
 import instagram from '../assets/instagram.webp'
 import transport from '../assets/transport.webp'
 import { useLocation, useNavigate } from "react-router"
+import user from '../assets/user.webp'
+import cartNav from '../assets/cartNav.webp'
+import favorite from '../assets/favorite.webp'
+
 
 
 
@@ -81,13 +85,39 @@ function NavBar() {
 
         </div>
 
-        <div className="LogInButton-Mobile">
+        {/* <div className="LogInButton-Mobile">
 
           <button type="button" className="ButtonToLog">Iniciar sesión</button>
 
-        </div>
+        </div> */}
 
-        {/* <div className="LoggedIn-Mobile"></div> */}
+        <div className="LoggedInPanel">
+
+          <div className="LoggedInIcons">
+
+             <img src={favorite} className="LoggedInIconsPic"></img>
+
+             <div className="LoggedInIconNumber">
+
+              <span className="">5</span>  
+
+             </div>
+
+          </div>
+
+          <div className="LoggedInIcons">
+
+             <img src={cartNav} className="LoggedInIconsPic"></img>
+
+          </div>
+
+          <div className="LoggedInIcons">
+
+             <img src={user} className="LoggedInIconsPic"></img>
+
+          </div>
+
+        </div>
 
       </div>
 
