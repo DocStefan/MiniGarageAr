@@ -96,6 +96,83 @@ ROJO-DARK: #C41117
 
 }
 
+.LoggedInPanel {
+
+ width: 30%;
+ height: 100%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: end;
+ align-items: center;
+
+ /* background-color: red; */
+
+}
+
+.LoggedInIcons {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ position: relative;
+
+ width: 15%;
+ height: 60%;
+
+ cursor: pointer;
+
+}
+
+.LoggedInIconsPic {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ width: 100%;
+ height: 100%;
+
+ object-fit: contain;
+
+}
+
+.LoggedInIconNumber {
+
+ position: absolute;
+ bottom: -7px;
+ right: 5px; 
+ width: 30px;
+ height: 30px;
+ border-radius: 50%;
+
+ background-color: red;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.LoggedInNumberSpan {
+
+ width: 100%;
+ height: 100%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+  font-family: "Roboto Flex", sans-serif;
+ font-size: 0.9vw;
+ font-weight: 700;
+ color: #FFFFFF;
+
+ margin-bottom: -1px;
+
+}
+
 .ButtonToLog {
 
  width: fit-content;
@@ -342,6 +419,82 @@ ROJO-DARK: #C41117
 
 }
 
+.LoggedInPanel {
+
+ width: 30%;
+ height: 100%;
+
+ display: flex;
+ flex-direction: row;
+ justify-content: space-evenly;
+ align-items: center;
+
+ /* background-color: red; */
+
+}
+
+.LoggedInIcons {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ position: relative;
+
+ width: 25%;
+ height: fit-content;
+
+}
+
+.LoggedInIconsPic {
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+ width: 100%;
+ height: 100%;
+ height: fit-content;
+
+ object-fit: contain;
+
+}
+
+.LoggedInIconNumber {
+
+ position: absolute;
+ bottom: -8px;
+ right: -14px; 
+ width: 60%;
+ height: 60%;
+ border-radius: 50%;
+
+ background-color: red;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+}
+
+.LoggedInNumberSpan {
+
+ width: 100%;
+ height: 100%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+  font-family: "Roboto Flex", sans-serif;
+ font-size: 2.5vw;
+ font-weight: 700;
+ color: #FFFFFF;
+
+ margin-bottom: -1px;
+
+}
+
 .ButtonToLog {
 
  width: fit-content;
@@ -580,7 +733,7 @@ ROJO-DARK: #C41117
  justify-content: center;
  align-items: end;
 
- background-color: red;
+ /* background-color: red; */
 
 }
 
@@ -628,10 +781,10 @@ ROJO-DARK: #C41117
 .LoggedInIconNumber {
 
  position: absolute;
- bottom: 0px;
- right: 0px; 
- width: 50%;
- height: 50%;
+ bottom: -4px;
+ right: -8px; 
+ width: 60%;
+ height: 60%;
  border-radius: 50%;
 
  background-color: red;
@@ -639,6 +792,24 @@ ROJO-DARK: #C41117
  display: flex;
  justify-content: center;
  align-items: center;
+
+}
+
+.LoggedInNumberSpan {
+
+ width: 100%;
+ height: 100%;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+
+  font-family: "Roboto Flex", sans-serif;
+ font-size: 2.5vw;
+ font-weight: 700;
+ color: #FFFFFF;
+
+ margin-bottom: -1px;
 
 }
 

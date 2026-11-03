@@ -85,13 +85,13 @@ function NavBar() {
 
         </div>
 
-        {/* <div className="LogInButton-Mobile">
+        <div className="LogInButton-Mobile">
 
           <button type="button" className="ButtonToLog">Iniciar sesión</button>
 
-        </div> */}
+        </div>
 
-        <div className="LoggedInPanel">
+        {/* <div className="LoggedInPanel">
 
           <div className="LoggedInIcons">
 
@@ -99,7 +99,7 @@ function NavBar() {
 
              <div className="LoggedInIconNumber">
 
-              <span className="">5</span>  
+              <span className="LoggedInNumberSpan">+5</span>  
 
              </div>
 
@@ -109,15 +109,27 @@ function NavBar() {
 
              <img src={cartNav} className="LoggedInIconsPic"></img>
 
+             <div className="LoggedInIconNumber">
+
+              <span className="LoggedInNumberSpan">+5</span>  
+
+             </div>
+
           </div>
 
           <div className="LoggedInIcons">
 
              <img src={user} className="LoggedInIconsPic"></img>
 
+             <div className="LoggedInIconNumber">
+
+              <span className="LoggedInNumberSpan">+5</span>  
+
+             </div>
+
           </div>
 
-        </div>
+        </div> */}
 
       </div>
 
