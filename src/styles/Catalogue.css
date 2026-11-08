@@ -480,6 +480,8 @@ ROJO-DARK: #C41117
  align-items: start;
  row-gap: 30px;
 
+ padding-bottom: 30px;
+
 }
 
 .NoResultsSection {
@@ -1233,6 +1235,8 @@ color: #FFFFFF;
  align-items: start;
  row-gap: 25px;
 
+ padding-bottom: 25px;
+
 }
 
 .NoResultsSection {
@@ -1926,6 +1930,10 @@ color: #FFFFFF;
  align-items: start;
  row-gap: 15px;
 
+ padding-bottom: 15px;
+
+ /* Cuando el boton "MAS RESULTADOS" aparece se rompe, Hay que hacer qeu solo se active al final de la lista de resultados el padding bottom */
+
 }
 
 .NoResultsSection {
@@ -1964,7 +1972,7 @@ color: #FFFFFF;
 .CatalogueShowcasePostBox {
 
  width: 47.5%;
- height: 30vh;
+ height: 50vh;
 
  display: flex;
  flex-direction: column;
@@ -1986,7 +1994,7 @@ color: #FFFFFF;
 .CatalogueDataImage {
 
  width: 100%;
- height: 60%;
+ height: 70%;
 
  display: flex;
  justify-content: center;
@@ -1999,7 +2007,7 @@ color: #FFFFFF;
 .CatalogueDataImageContainer {
 
  width: fit-content;
- height: 92.5%;
+ height: 87.5%;
 
  object-fit: contain;
 
@@ -2081,7 +2089,7 @@ color: #FFFFFF;
 .CatalogueLoadingShowcasePostBox {
 
  width: 47.5%;
- height: 30vh;
+ height: 50vh;
 
  display: flex;
  flex-direction: column;

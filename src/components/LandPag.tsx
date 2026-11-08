@@ -32,7 +32,7 @@ function LandPag() {
          
          <span className="SecondText">Tu proximo Hot Wheels te esta esperando</span>
 
-         <button className="LandButton" type="button" onClick={() => {navegar("/catalogo")}}>VER CATALOGO<div className="AnimBlock"></div></button>
+         <button className="LandButton" type="button" onClick={() => {navegar("/catalogo")}}>VER CATALOGO{screen == "PC" ? <div className="AnimBlock"></div> : ""}</button>
 
        </div>
 

@@ -20,8 +20,6 @@ function Favoritos() {
 
       const screen = useResponsiveDetect()
 
-
-
     interface arrivalsData {
 
       id: number,
@@ -69,7 +67,7 @@ function Favoritos() {
 
             <div className="FavoriteButton" style={{marginTop: "13px"}}>
 
-               <button type="button" className="ButtonToCatalogueFavorite" onClick={() => {navegar("/catalogo")}}><div className="ButtonArrivalsText">IR AL CATALOGO{screen === "PC" ? <div className="AnimBlock"></div> : ""}</div></button>
+               <button type="button" className="ButtonToCatalogueFavorite" onClick={() => {navegar("/catalogo")}}><div className="ButtonFavoriteText">IR AL CATALOGO{screen === "PC" ? <div className="AnimBlock"></div> : ""}</div></button>
 
             </div>
 
@@ -93,7 +91,7 @@ function Favoritos() {
 
                   return (
 
-                <div className="FavoritePostBox" onClick={() => {navegar(`/catalogo/${data.id}`)}} style={{backgroundImage: `url("${LastBack}")`}}>
+                <div className="FavoritePostBox" onClick={() => {navegar(`/favoritos/${data.id}`)}} style={{backgroundImage: `url("${LastBack}")`}}>
 
                     <div className="FavoriteIconCont"><span className="material-symbols-outlined FavoriteIcon">favorite</span></div>
 

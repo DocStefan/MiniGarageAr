@@ -209,6 +209,9 @@ ROJO-DARK: #C41117
 
  position: fixed;
  left: 0;
+ top: 0;
+
+ /* no estaba el top puestoa antes - revisar en caso de que se rompa antes */
 
  background-color: #040605;
 
@@ -237,13 +240,14 @@ ROJO-DARK: #C41117
  align-items: start;
 
  margin-bottom: 25px;
+ margin-top: 45px;
 
 }
 
 .PicLogoMenu {
 
- width: 100%;
- height: 200px;
+ width: fit-content;
+ height: 230px;
 
  margin-top: 5px;
 
@@ -531,6 +535,9 @@ ROJO-DARK: #C41117
 
  position: fixed;
  left: 0;
+ top: 0;
+
+ /* no estaba el top puestoa antes - revisar en caso de que se rompa antes */
 
  background-color: #040605;
 
@@ -559,13 +566,14 @@ ROJO-DARK: #C41117
  align-items: start;
 
  margin-bottom: 25px;
+ margin-top: 50px;
 
 }
 
 .PicLogoMenu {
 
  width: 100%;
- height: 200px;
+ height: 250px;
 
  margin-top: 5px;
 
@@ -846,6 +854,9 @@ ROJO-DARK: #C41117
 
  position: fixed;
  left: 0;
+ top: 0;
+
+ /* no estaba el top puestoa antes - revisar en caso de que se rompa antes */
 
  background-color: #040605;
 
@@ -874,13 +885,14 @@ ROJO-DARK: #C41117
  align-items: start;
 
  margin-bottom: 15px;
+ margin-top: 35px;
 
 }
 
 .PicLogoMenu {
 
  width: 100%;
- height: 130px;
+ height: 175px;
 
  margin-top: 5px;
 
