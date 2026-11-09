@@ -125,6 +125,14 @@ ROJO-DARK: #C41117
 
 }
 
+.LoggedInIconPCMarginFix {
+
+ margin-right: 2%;
+
+}
+
+/* la clase de arriba no existia cuando estaba el logo user */
+
 .LoggedInIconsPic {
 
  display: flex;
@@ -752,8 +760,10 @@ ROJO-DARK: #C41117
 
  display: flex;
  flex-direction: row;
- justify-content: space-evenly;
+ justify-content: end;
  align-items: center;
+
+ /* solia ser space evenly (removi el logo de user) */
 
  /* background-color: red; */
 
@@ -769,6 +779,10 @@ ROJO-DARK: #C41117
 
  width: 25%;
  height: fit-content;
+
+ margin-right: 11%;
+
+ /* la propiedad margin-right no estaba con el logo de user puesto */
 
 }
 

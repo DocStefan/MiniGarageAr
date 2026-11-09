@@ -1,5 +1,5 @@
 // import React from 'react'
-import { useState, useRef, useEffect, use} from "react"
+import { useState, useRef, useEffect} from "react"
 import "../styles/NavBarStyle.css"
 import LogoMiniGarageAr from '../assets/LogoMiniGarageAr.webp'
 import home from '../assets/home.webp'
@@ -85,15 +85,15 @@ function NavBar() {
 
         </div>
 
-        <div className="LogInButton-Mobile">
+        {/* <div className="LogInButton-Mobile">
 
           <button type="button" className="ButtonToLog">Iniciar sesión</button>
 
-        </div>
+        </div> */}
 
-        {/* <div className="LoggedInPanel">
+        <div className="LoggedInPanel">
 
-          <div className="LoggedInIcons">
+          <div className="LoggedInIcons" onClick={() => {navigateTo("/favoritos")}}>
 
              <img src={favorite} className="LoggedInIconsPic"></img>
 
@@ -105,7 +105,7 @@ function NavBar() {
 
           </div>
 
-          <div className="LoggedInIcons">
+          <div className="LoggedInIcons LoggedInIconPCMarginFix" onClick={() => {navigateTo("/carrito")}}>
 
              <img src={cartNav} className="LoggedInIconsPic"></img>
 
@@ -117,19 +117,13 @@ function NavBar() {
 
           </div>
 
-          <div className="LoggedInIcons">
+          {/* <div className="LoggedInIcons">
 
              <img src={user} className="LoggedInIconsPic"></img>
 
-             <div className="LoggedInIconNumber">
+          </div> */}
 
-              <span className="LoggedInNumberSpan">+5</span>  
-
-             </div>
-
-          </div>
-
-        </div> */}
+        </div>
 
       </div>
 

@@ -801,7 +801,7 @@ color: #FFFFFF;
  .LastArrivals-Mobile {
 
  width: 100vw;
- height: 90vh;
+ min-height: 90vh;
  background-color: #040605;
 
  display: flex;
@@ -828,7 +828,7 @@ color: #FFFFFF;
 .ArrivalsTittle {
 
  width: 100%;
- height: 12.67%;
+ height: 11.403vh;
 
  display: flex;
  flex-direction: row;
@@ -872,7 +872,9 @@ color: #FFFFFF;
  grid-template-columns:  48.3% 48.3%;
  grid-template-rows: 49% 49%;
  column-gap: 3.4%;
- row-gap: 2%;
+ row-gap: 2.5%;
+
+ padding-bottom: 2.5%;
 
 
 }
@@ -880,7 +882,7 @@ color: #FFFFFF;
 .ShowcasePostBox {
 
  width: 100%;
- height: 100%;
+ height: 50vh;
 
  display: flex;
  flex-direction: column;
@@ -906,7 +908,7 @@ color: #FFFFFF;
 .DataImage {
 
  width: 100%;
- height: 60%;
+ height: 70%;
 
  display: flex;
  justify-content: center;
@@ -919,7 +921,7 @@ color: #FFFFFF;
 .DataImageContainer {
 
  width: fit-content;
- height: 92.5%;
+ height: 87.5%;
 
  object-fit: contain;
 
@@ -1049,7 +1051,7 @@ color: #FFFFFF;
 .LastArrivalButton {
 
  width: 100%;
- height: 10.83%;
+ height: 9.747vh;
 
  display: flex;
  justify-content: center;
@@ -1088,7 +1090,7 @@ color: #FFFFFF;
  transform: skewX(20deg);
 color: #FFFFFF;
  font-weight: 500;
- font-size: 6.5vw;
+ font-size: 8vw;
  font-family: "Roboto Flex", sans-serif;
 }
 

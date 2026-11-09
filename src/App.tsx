@@ -25,7 +25,7 @@ function App() {
           <Route path='/catalogo/:productId' element={[<NavBar />, <Product />, <Footer />]} />
           <Route path='/favoritos' element={[<NavBar />, <Favoritos />, <Footer />]}></Route>
           <Route path='/favoritos/:productId' element={[<NavBar />, <Product />, <Footer />]}></Route>
-          <Route path='/carrito' element={[<NavBar />, <Carrito />, <Footer />]}></Route>                  
+          <Route path='/carrito' element={[<NavBar />, <Carrito />]}></Route>                  
         </Routes>
       </ScrollProvider>
     </BrowserRouter>

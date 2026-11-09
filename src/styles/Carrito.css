@@ -1,0 +1,2042 @@
+@media (min-width: 1025px) {
+
+    .CartMain {
+
+        width: 100vw;
+        min-height: 100vh;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+    }
+
+    .CarritoTittle {
+
+        width: 94%;
+        height: 7vh;
+        margin-top: 10vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        /* background-color: blue; */
+
+        position: absolute;
+
+    }
+
+    .CarritoTittleSpan {
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 3vw;
+        color: #FFFFFF;
+        font-weight: 600;
+        cursor: default;
+
+    }
+
+    .ProductosEnCarrito {
+
+        width: 95%;
+        height: 62.75vh;
+
+        position: absolute;
+        top: 18vh;
+
+        /* background-color: red; */
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        row-gap: 3%;
+        column-gap: 1%;
+
+        padding-left: 1%;
+
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar {
+        width: 4.5px;
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar-thumb {
+        background: #E60410;
+        border-radius: 50px;
+    }
+
+    .CartProductPostBox {
+
+        width: 49%;
+        height: 30%;
+
+        border-radius: 25px;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        overflow: hidden;
+
+        border: solid 2px #373C3D;
+        border-radius: 15px;
+
+    }
+
+    .CartImageContainer {
+
+        width: 25%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        position: relative;
+
+    }
+
+    .CartImage {
+
+        object-fit: contain;
+        width: fit-content;
+        height: 97.5%;
+
+    }
+
+    .PicDegradeCartPostLeft {
+
+        position: absolute;
+        width: 8%;
+        height: 100%;
+        right: 0;
+        background: linear-gradient(90deg, rgba(4, 6, 5, 0) 0%, rgba(4, 6, 5, 1) 100%);
+        z-index: 1;
+
+    }
+
+    .CartProductText {
+
+        width: 55%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        cursor: default;
+
+    }
+
+    .CartProductName {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #FFFFFF;
+        font-size: 1.5vw;
+        font-weight: 600;
+
+        text-align: start;
+
+    }
+
+    .CartProductLine {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: rgb(255, 255, 255, 0.75);
+        font-size: 1.1vw;
+        font-weight: 600;
+
+        text-align: start;
+
+    }
+
+    .CartProductPrice {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #f10f1a;
+        font-size: 1.6vw;
+        font-weight: 700;
+
+        text-align: start;
+
+    }
+
+    .CartProductButtons {
+
+        width: 20%;
+        height: 100%;
+
+        /* background-color: white; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+
+        padding-right: 1.75%;
+
+    }
+
+    .CartRemoveButton {
+
+        width: 2.34vw;
+        height: 30%;
+
+        background-color: #040605;
+        border: solid 2px #373C3D;
+
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+    }
+
+    .CartRemoveButtonLogo {
+
+        width: 65%;
+        height: fit-content;
+        object-fit: contain;
+
+    }
+
+    .CartRemoveButton:hover {
+
+
+        border: solid 2px #E60410;
+
+
+    }
+
+    .CartQuantityButton {
+
+        height: 30%;
+        width: 90%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+    }
+
+    .CartQuantityTopPseudoBorder,
+    .CartQuantityBottomPseudoBorder {
+
+        width: 50%;
+        height: 2px;
+
+        background-color: #131b17;
+        position: absolute;
+
+        z-index: 0;
+        transform: translateX(50%);
+
+
+    }
+
+    .CartPlusQuantity,
+    .CartMinusQuantity {
+
+        width: 31%;
+        height: 100%;
+
+        background-color: #040605;
+        border: solid 2px #373C3D;
+
+        border-radius: 10px;
+        z-index: 1;
+
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .CartPlusQuantity:hover,
+    .CartMinusQuantity:hover {
+
+        border: solid 2px #E60410;
+
+    }
+
+    .CartQuantityMinusAndPlusLogo {
+
+        height: fit-content;
+        object-fit: contain;
+
+    }
+
+    .CartQuantityNumber {
+
+        height: 100%;
+        width: 38%;
+
+        background-color: black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 1.75vw;
+        color: #FFFFFF;
+
+        cursor: default;
+
+    }
+
+    .CarritoResume {
+
+        width: 100%;
+        height: 17.5vh;
+
+        bottom: 0px;
+
+        position: absolute;
+
+        border-top: solid 2px #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .ResumeTextAndTotal {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .ResumeTextTittle {
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 2.25vw;
+        color: #FFFFFF;
+        font-weight: 400;
+        cursor: default;
+
+        width: 90%;
+        height: fit-content;
+        text-align: start;
+
+
+    }
+
+    .ResumeTextPrice {
+
+        cursor: default;
+
+        width: 90%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #f10f1a;
+        font-size: 3vw;
+        font-weight: 700;
+        text-align: start;
+
+    }
+
+    .ResumeButton {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+    .ConfirmButton {
+
+        width: 50%;
+        height: 4vw;
+        background-color: transparent;
+        border-radius: 200px;
+
+        border: solid 2px #E60410;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 2vw;
+        font-family: "Roboto Flex", sans-serif;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+        cursor: pointer;
+
+        position: relative;
+        overflow: hidden;
+
+        z-index: 1;
+
+        margin-right: 5%;
+
+    }
+
+    .AnimBlockConfirmButton {
+
+        width: 120%;
+        height: 100%;
+        background-color: #E60410;
+
+        position: absolute;
+        transform: translateX(-100%);
+        z-index: -1;
+
+    }
+
+    @keyframes LandButtonHover {
+
+        to {
+            transform: translateX(0%);
+        }
+
+    }
+
+    .ConfirmButton:hover {
+
+        .AnimBlockConfirmButton {
+
+            width: 120%;
+            height: 100%;
+            background-color: #E60410;
+
+            position: absolute;
+            animation: CartButtonHover 0.5s ease forwards
+        }
+
+    }
+
+    .LoadingCartProductPostBox {
+
+        width: 49%;
+        height: 30%;
+
+        border-radius: 25px;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        overflow: hidden;
+
+        border: solid 2px #373C3D;
+        border-radius: 15px;
+
+    }
+
+    .LoadingCartImageContainer {
+
+        width: 25%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .LoadingCartImage {
+
+        object-fit: contain;
+        width: 85%;
+        height: 85%;
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 15px;
+
+    }
+
+    .LoadingCartProductText {
+
+        width: 55%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+
+        cursor: default;
+
+    }
+
+    .LoadingCartProductName {
+
+        width: 94%;
+        height: 5vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductLine {
+
+        width: 70%;
+        height: 3.25vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductPrice {
+
+        width: 30%;
+        height: 4vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductButtons {
+
+        width: 20%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+
+        padding-right: 1.75%;
+
+    }
+
+    .LoadingCartRemoveButton {
+
+        width: 2.34vw;
+        height: 30%;
+
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 10px;
+
+    }
+
+    .LoadingCartQuantityButton {
+
+        height: 30%;
+        width: 90%;
+
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 10px;
+
+    }
+
+    .EmptyCart {
+
+        width: 95%;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+
+        margin-top: 10vh;
+
+    }
+
+    .EmptyCartLogo {
+
+        width: 50%;
+        height: 65%;
+
+        object-fit: contain;
+
+    }
+
+    .EmptyCartFirstText,
+    .EmptyCartSecondText {
+
+        width: 100%;
+        text-align: center;
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 2vw;
+        font-weight: 500;
+
+        cursor: default;
+
+    }
+
+    .EmptyCartButton {
+
+        width: 100%;
+        height: 10.83%;
+
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 5vw;
+        font-family: "Anton", sans-serif;
+
+    }
+
+    .ButtonToCatalogueEmptyCart {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(255, 255, 255, 0);
+        border: solid 3px #E60410;
+        height: 7vh;
+        width: 20%;
+        padding: 0 0 0 0;
+        transform: skewX(-20deg);
+
+        overflow: hidden;
+
+        cursor: pointer;
+
+    }
+
+    .ButtonEmptyCartText {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transform: skewX(20deg);
+        color: #FFFFFF;
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-weight: 500;
+        font-size: 2vw;
+
+        position: relative;
+
+    }
+
+    .AnimBlockEmptyCart {
+
+        width: 120%;
+        height: 100%;
+        background-color: #E60410;
+
+        position: absolute;
+        transform: translateX(-100%);
+        z-index: -1;
+
+    }
+
+    @keyframes CartButtonHover {
+
+        to {
+            transform: translateX(0%);
+        }
+
+    }
+
+    .ButtonToCatalogueEmptyCart:hover {
+
+        .AnimBlockEmptyCart {
+
+            width: 120%;
+            height: 100%;
+            background-color: #E60410;
+
+            position: absolute;
+            animation: CartButtonHover 0.5s ease forwards
+        }
+
+    }
+
+}
+
+@media (min-width: 500px) and (max-width: 1024px) {
+
+ .CartMain {
+
+        width: 100vw;
+        min-height: 100vh;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+    }
+
+    .CarritoTittle {
+
+        width: 94%;
+        height: 5vh;
+        margin-top: 10vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        /* background-color: blue; */
+
+        position: absolute;
+
+    }
+
+    .CarritoTittleSpan {
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 7.5vw;
+        color: #FFFFFF;
+        font-weight: 600;
+        cursor: default;
+
+    }
+
+    .ProductosEnCarrito {
+
+        width: 95%;
+        height: 68.75vh;
+
+        position: absolute;
+        top: 16.75vh;
+
+        /* background-color: red; */
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        row-gap: 3%;
+        column-gap: 1%;
+
+        padding-left: 1%;
+
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar {
+        width: 4.5px;
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar-thumb {
+        background: #E60410;
+        border-radius: 50px;
+    }
+
+    .CartProductPostBox {
+
+        width: 100%;
+        height: 22%;
+
+        border-radius: 25px;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        overflow: hidden;
+
+        border: solid 2px #373C3D;
+        border-radius: 15px;
+
+    }
+
+    .CartImageContainer {
+
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        position: relative;
+
+    }
+
+    .CartImage {
+
+        object-fit: contain;
+        width: fit-content;
+        height: 95%;
+
+    }
+
+    .PicDegradeCartPostLeft {
+
+        position: absolute;
+        width: 8%;
+        height: 100%;
+        right: 0;
+        background: linear-gradient(90deg, rgba(4, 6, 5, 0) 0%, rgba(4, 6, 5, 1) 100%);
+        z-index: 1;
+
+    }
+
+    .CartProductText {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+
+        cursor: default;
+
+        /* background-color: red; */
+
+    }
+
+    .CartProductName {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #FFFFFF;
+        font-size: 4vw;
+        font-weight: 600;
+
+        text-align: start;
+
+    }
+
+    .CartProductLine {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: rgb(255, 255, 255, 0.75);
+        font-size: 3vw;
+        font-weight: 600;
+
+        text-align: start;
+
+    }
+
+    .CartProductPrice {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #f10f1a;
+        font-size: 3.75vw;
+        font-weight: 700;
+
+        text-align: start;
+
+    }
+
+    .CartProductButtons {
+
+        width: 20%;
+        height: 100%;
+
+        /* background-color: white; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+
+        padding-right: 1.75%;
+
+    }
+
+    .CartRemoveButton {
+
+        width: 5.48vw;
+        height: 30%;
+
+        background-color: #040605;
+        border: solid 2px #373C3D;
+
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+    }
+
+    .CartRemoveButtonLogo {
+
+        width: 65%;
+        height: fit-content;
+        object-fit: contain;
+
+    }
+
+    .CartRemoveButton:hover {
+
+
+        border: solid 2px #E60410;
+
+
+    }
+
+    .CartQuantityButton {
+
+        height: 30%;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+
+    }
+
+    .CartQuantityTopPseudoBorder,
+    .CartQuantityBottomPseudoBorder {
+
+        width: 50%;
+        height: 2px;
+
+        background-color: #131b17;
+        position: absolute;
+
+        z-index: 0;
+        transform: translateX(50%);
+
+
+    }
+
+    .CartPlusQuantity,
+    .CartMinusQuantity {
+
+        width: 31%;
+        height: 100%;
+
+        background-color: #040605;
+        border: solid 2px #373C3D;
+
+        border-radius: 10px;
+        z-index: 1;
+
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .CartPlusQuantity:hover,
+    .CartMinusQuantity:hover {
+
+        border: solid 2px #E60410;
+
+    }
+
+    .CartQuantityMinusAndPlusLogo {
+
+        height: fit-content;
+        object-fit: contain;
+
+    }
+
+    .CartQuantityNumber {
+
+        height: 100%;
+        width: 38%;
+
+        background-color: black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 4.3vw;
+        color: #FFFFFF;
+
+        cursor: default;
+
+    }
+
+    .CarritoResume {
+
+        width: 100%;
+        height: 12.5vh;
+
+        bottom: 0px;
+
+        position: absolute;
+
+        border-top: solid 2px #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .ResumeTextAndTotal {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        row-gap: 2.5px;
+
+    }
+
+    .ResumeTextTittle {
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 5.5vw;
+        color: #FFFFFF;
+        font-weight: 500;
+        cursor: default;
+
+        width: 90%;
+        height: fit-content;
+        text-align: start;
+
+
+    }
+
+    .ResumeTextPrice {
+
+        cursor: default;
+
+        width: 90%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #f10f1a;
+        font-size: 6vw;
+        font-weight: 700;
+        text-align: start;
+
+    }
+
+    .ResumeButton {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+    .ConfirmButton {
+
+        width: 100%;
+        height: 10vw;
+        background-color: transparent;
+        border-radius: 200px;
+
+        border: solid 2px #E60410;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 4vw;
+        font-family: "Roboto Flex", sans-serif;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+        cursor: pointer;
+
+        position: relative;
+        overflow: hidden;
+
+        z-index: 1;
+
+        margin-right: 5%;
+
+    }
+
+    .LoadingCartProductPostBox {
+
+        width: 100%;
+        height: 22%;
+
+        border-radius: 25px;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        overflow: hidden;
+
+        border: solid 2px #373C3D;
+        border-radius: 15px;
+
+    }
+
+    .LoadingCartImageContainer {
+
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .LoadingCartImage {
+
+        object-fit: contain;
+        width: 85%;
+        height: 85%;
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 15px;
+
+    }
+
+    .LoadingCartProductText {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+
+        cursor: default;
+
+    }
+
+    .LoadingCartProductName {
+
+        width: 94%;
+        height: 3.5vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductLine {
+
+        width: 70%;
+        height: 2.75vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductPrice {
+
+        width: 50%;
+        height: 3vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductButtons {
+
+        width: 20%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+
+        padding-right: 1.75%;
+
+    }
+
+    .LoadingCartRemoveButton {
+
+        width: 7vw;
+        height: 30%;
+
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 10px;
+
+    }
+
+    .LoadingCartQuantityButton {
+
+        height: 30%;
+        width: 100%;
+
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 10px;
+
+    }
+
+    .EmptyCart {
+
+        width: 95%;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 10vh;
+
+        /* background-color: red; */
+
+    }
+
+    .EmptyCartLogo {
+
+        width: 100%;
+        height: fit-content;
+
+        object-fit: contain;
+
+    }
+
+    .EmptyCartFirstText,
+    .EmptyCartSecondText {
+
+        width: 100%;
+        text-align: center;
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 7vw;
+        font-weight: 500;
+
+        cursor: default;
+
+    }
+
+    .EmptyCartButton {
+
+        width: 100%;
+        height: 10.83%;
+
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+    .ButtonToCatalogueEmptyCart {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(255, 255, 255, 0);
+        border: solid 3px #E60410;
+        height: 7vh;
+        width: 60%;
+        padding: 0 0 0 0;
+        transform: skewX(-20deg);
+
+        overflow: hidden;
+
+        cursor: pointer;
+
+    }
+
+    .ButtonEmptyCartText {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transform: skewX(20deg);
+        color: #FFFFFF;
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-weight: 500;
+        font-size: 6vw;
+
+        position: relative;
+
+    }
+
+}
+
+@media (max-width: 499px) {
+
+    .CartMain {
+
+        width: 100vw;
+        min-height: 100vh;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+    }
+
+    .CarritoTittle {
+
+        width: 94%;
+        height: 5vh;
+        margin-top: 10vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+
+        /* background-color: blue; */
+
+        position: absolute;
+
+    }
+
+    .CarritoTittleSpan {
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 7.5vw;
+        color: #FFFFFF;
+        font-weight: 600;
+        cursor: default;
+
+    }
+
+    .ProductosEnCarrito {
+
+        width: 95%;
+        height: 68.75vh;
+
+        position: absolute;
+        top: 16vh;
+
+        /* background-color: red; */
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+
+        overflow-y: scroll;
+        overflow-x: hidden;
+
+        row-gap: 3%;
+        column-gap: 1%;
+
+        padding-left: 1%;
+
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar {
+        width: 4.5px;
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ProductosEnCarrito::-webkit-scrollbar-thumb {
+        background: #E60410;
+        border-radius: 50px;
+    }
+
+    .CartProductPostBox {
+
+        width: 100%;
+        height: 22%;
+
+        border-radius: 25px;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        overflow: hidden;
+
+        border: solid 2px #373C3D;
+        border-radius: 15px;
+
+    }
+
+    .CartImageContainer {
+
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+
+        position: relative;
+
+    }
+
+    .CartImage {
+
+        object-fit: contain;
+        width: fit-content;
+        height: 95%;
+
+    }
+
+    .PicDegradeCartPostLeft {
+
+        position: absolute;
+        width: 8%;
+        height: 100%;
+        right: 0;
+        background: linear-gradient(90deg, rgba(4, 6, 5, 0) 0%, rgba(4, 6, 5, 1) 100%);
+        z-index: 1;
+
+    }
+
+    .CartProductText {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+
+        cursor: default;
+
+        /* background-color: red; */
+
+    }
+
+    .CartProductName {
+
+        width: 94%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #FFFFFF;
+        font-size: 4vw;
+        font-weight: 600;
+
+        text-align: start;
+
+        margin-left: 3%;
+
+    }
+
+    .CartProductLine {
+
+        width: 70%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: rgb(255, 255, 255, 0.75);
+        font-size: 3vw;
+        font-weight: 600;
+
+        text-align: start;
+
+        margin-left: 3%;
+
+
+    }
+
+    .CartProductPrice {
+
+        width: 70%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #f10f1a;
+        font-size: 3.75vw;
+        font-weight: 700;
+
+        text-align: start;
+
+        margin-left: 3%;
+
+
+    }
+
+    .CartProductButtons {
+
+        width: 20%;
+        height: 100%;
+
+        /* background-color: white; */
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+
+        padding-right: 1.75%;
+
+    }
+
+    .CartRemoveButton {
+
+        width: 7.89vw;
+        height: 30%;
+
+        background-color: #040605;
+        border: solid 2px #373C3D;
+
+        border-radius: 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        cursor: pointer;
+
+    }
+
+    .CartRemoveButtonLogo {
+
+        width: 65%;
+        height: fit-content;
+        object-fit: contain;
+
+    }
+
+    .CartRemoveButton:hover {
+
+
+        border: solid 2px #E60410;
+
+
+    }
+
+    .CartQuantityButton {
+
+        height: 30%;
+        width: 150%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+
+
+    }
+
+    .CartQuantityTopPseudoBorder,
+    .CartQuantityBottomPseudoBorder {
+
+        width: 50%;
+        height: 2px;
+
+        background-color: #131b17;
+        position: absolute;
+
+        z-index: 0;
+        transform: translateX(50%);
+
+
+    }
+
+    .CartPlusQuantity,
+    .CartMinusQuantity {
+
+        width: 31%;
+        height: 100%;
+
+        background-color: #040605;
+        border: solid 2px #373C3D;
+
+        border-radius: 10px;
+        z-index: 1;
+
+        cursor: pointer;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .CartPlusQuantity:hover,
+    .CartMinusQuantity:hover {
+
+        border: solid 2px #E60410;
+
+    }
+
+    .CartQuantityMinusAndPlusLogo {
+
+        height: fit-content;
+        object-fit: contain;
+
+    }
+
+    .CartQuantityNumber {
+
+        height: 100%;
+        width: 38%;
+
+        background-color: black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-family: 'Barlow Condensed', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        font-size: 5vw;
+        color: #FFFFFF;
+
+        cursor: default;
+
+    }
+
+    .CarritoResume {
+
+        width: 100%;
+        height: 12.5vh;
+
+        bottom: 0px;
+
+        position: absolute;
+
+        border-top: solid 2px #FFFFFF;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .ResumeTextAndTotal {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        row-gap: 2.5px;
+
+    }
+
+    .ResumeTextTittle {
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 5.5vw;
+        color: #FFFFFF;
+        font-weight: 500;
+        cursor: default;
+
+        width: 90%;
+        height: fit-content;
+        text-align: start;
+
+
+    }
+
+    .ResumeTextPrice {
+
+        cursor: default;
+
+        width: 90%;
+        height: fit-content;
+
+        font-family: "Roboto flex", system-ui;
+        color: #f10f1a;
+        font-size: 6vw;
+        font-weight: 700;
+        text-align: start;
+
+    }
+
+    .ResumeButton {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+    }
+
+    .ConfirmButton {
+
+        width: 100%;
+        height: 10vw;
+        background-color: transparent;
+        border-radius: 200px;
+
+        border: solid 2px #E60410;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 4vw;
+        font-family: "Roboto Flex", sans-serif;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+        cursor: pointer;
+
+        position: relative;
+        overflow: hidden;
+
+        z-index: 1;
+
+        margin-right: 5%;
+
+    }
+
+    .LoadingCartProductPostBox {
+
+        width: 100%;
+        height: 22%;
+
+        border-radius: 25px;
+
+        background-color: #040605;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+
+        overflow: hidden;
+
+        border: solid 2px #373C3D;
+        border-radius: 15px;
+
+    }
+
+    .LoadingCartImageContainer {
+
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .LoadingCartImage {
+
+        object-fit: contain;
+        width: 85%;
+        height: 85%;
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 15px;
+
+    }
+
+    .LoadingCartProductText {
+
+        width: 50%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: start;
+
+        cursor: default;
+
+    }
+
+    .LoadingCartProductName {
+
+        width: 94%;
+        height: 3.5vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductLine {
+
+        width: 70%;
+        height: 2.75vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductPrice {
+
+        width: 50%;
+        height: 3vh;
+
+        border-radius: 20px;
+
+        background-color: rgb(29, 27, 27);
+
+    }
+
+    .LoadingCartProductButtons {
+
+        width: 20%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: end;
+
+        padding-right: 1.75%;
+
+    }
+
+    .LoadingCartRemoveButton {
+
+        width: 7vw;
+        height: 30%;
+
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 10px;
+
+    }
+
+    .LoadingCartQuantityButton {
+
+        height: 30%;
+        width: 100%;
+
+        background-color: rgb(29, 27, 27);
+
+        border-radius: 10px;
+
+    }
+
+    .EmptyCart {
+
+        width: 95%;
+        height: 80vh;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 10vh;
+
+        /* background-color: red; */
+
+    }
+
+    .EmptyCartLogo {
+
+        width: 100%;
+        height: fit-content;
+
+        object-fit: contain;
+
+    }
+
+    .EmptyCartFirstText,
+    .EmptyCartSecondText {
+
+        width: 100%;
+        text-align: center;
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-size: 7vw;
+        font-weight: 500;
+
+        cursor: default;
+
+    }
+
+    .EmptyCartButton {
+
+        width: 100%;
+        height: 10.83%;
+
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+    }
+
+    .ButtonToCatalogueEmptyCart {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: rgb(255, 255, 255, 0);
+        border: solid 3px #E60410;
+        height: 7vh;
+        width: 60%;
+        padding: 0 0 0 0;
+        transform: skewX(-20deg);
+
+        overflow: hidden;
+
+        cursor: pointer;
+
+    }
+
+    .ButtonEmptyCartText {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        transform: skewX(20deg);
+        color: #FFFFFF;
+
+        font-family: "Dela Gothic One", sans-serif;
+        font-weight: 500;
+        font-size: 6vw;
+
+        position: relative;
+
+    }
+
+}
